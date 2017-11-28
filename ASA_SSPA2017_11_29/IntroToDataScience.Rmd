@@ -3,8 +3,8 @@ title: "Introduction to Data Science"
 author: '[Hui Lin](http://scientistcafe.com), DowDuPont'
 date: "Nov 29, 2017"
 output:
-  beamer_presentation: default
   ioslides_presentation: default
+  beamer_presentation: default
   slidy_presentation:
     footer: http://scientistcafe.com
 ---
@@ -76,9 +76,6 @@ Here is a list of definitions for a “data scientist”:
 ```{r, out.width = "850px",out.height = "400px"}
 knitr::include_graphics("http://scientistcafe.com/book/Figure/DataScienceTimeline.png")
 ```
-
-
-<!--In the mid-1980s, parallel distributed processing became popular under the name connectionism. The textbook by David E. Rumelhart and James McClelland[8] (1986) provided a full exposition of the use of connectionism in computers to simulate neural processes.-->
 
 ## Driving Forces
 
