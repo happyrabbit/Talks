@@ -3,10 +3,10 @@ title: "Introduction to Data Science"
 author: '[Hui Lin](http://scientistcafe.com), DowDuPont'
 date: "Nov 29, 2017"
 output:
-  ioslides_presentation: default
-  beamer_presentation: default
   slidy_presentation:
     footer: http://scientistcafe.com
+  ioslides_presentation: default
+  beamer_presentation: default
 ---
 
 ```{r setup, include=FALSE}
