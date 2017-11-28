@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Data Science"
 author: '[Hui Lin](http://scientistcafe.com), DowDuPont'
-date: "Nov 29, 2017"
+date: "2017/11/29 @ ASA"
 output:
   slidy_presentation:
     footer: http://scientistcafe.com
@@ -13,16 +13,16 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## About Me: Hui Lin
+## Outline
 
-> - Language: 1st Chinese; 2nd R; 3rd English
-> - Graduated from Iowa State Univ (MS & PhD in Stats)
-> - Data Scientist at DowDuPont
-> - Co-founder of [ Central Iowa R User Group](http://www.meetup.com/Central-Iowa-R-User-Group/)
-> - Scientist Cafe: http://scientistcafe.com
-> - Contact: [Email](longqiman@gmail.com);   [Github](https://github.com/happyrabbit);  [Twitter](https://twitter.com/gossip_rabbit);
-[Personal Website](http://linhui.org)
->- [Jokes](http://hui1987.com/jokes.html)
+- Slides: http://scientistcafe.com/IDS/slides/IntroToDataScience.html
+- What is data science? Some definitions
+- Brief history
+- What questions can data science answer? 
+- Types of Learning
+- Types of Algorithm
+- Data Scientist Skill Set
+- Data Science Pipeline
 
 ## 
 
@@ -62,14 +62,9 @@ Here is a list of definitions for a “data scientist”:
 
 ## %&^%$*(^).....
 
+- You know it when you see it.
+
 ![](/Users/happyrabbit/Dropbox/gif/panada.gif){width=40%}
-
-
-## What is “hard-core pornography”?
-
-- Obscenity case of Jacobellis v. Ohio (1964)
-
-> “I know it when I see it. (Potter Stewart)”
 
 ## Brief History
 
@@ -110,19 +105,26 @@ Here is a list of definitions for a “data scientist”:
 ![](http://scientistcafe.com/book/Figure/LearningStyles.png){height=100%}
 </center>
 
-## Types of Algorithm (1)
+## Types of Algorithm (1) 
+
+- http://scientistcafe.com/2017/07/08/MachineLearningAl.html
 
 <center>
 ![](images/AlogrithmTypes1.png){height=100%}
 </center>
 
+
 ## Types of Algorithm (2)
+
+- http://scientistcafe.com/2017/07/08/MachineLearningAl.html
 
 <center>
 ![](images/AlogrithmTypes2.png){height=100%}
 </center>
 
 ## Types of Algorithm (3)
+
+- http://scientistcafe.com/2017/07/08/MachineLearningAl.html
 
 <center>
 ![](images/AlogrithmTypes3.png){height=100%}
@@ -144,10 +146,12 @@ Here is a list of definitions for a “data scientist”:
 
 ## Some links
 
+- [Types of Machine Learning Algorithm](http://scientistcafe.com/2017/07/08/MachineLearningAl.html)
+
 - Online books:
     - [The Elements of Statistical Learning](http://web.stanford.edu/~hastie/ElemStatLearn/)
     - [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/)
-    - [Introduction to Data Science](http://scientistcafe.com/IDS/)
+    - [Introduction to Data Science](http://scientistcafe.com/IDS/)(still writing)
 
 - Hard copy books:
     - [Applied Predictive Modeling](http://appliedpredictivemodeling.com)
