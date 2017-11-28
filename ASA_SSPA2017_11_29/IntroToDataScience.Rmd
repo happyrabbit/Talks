@@ -99,32 +99,33 @@ knitr::include_graphics("http://scientistcafe.com/book/Figure/DataScienceTimelin
 
 ## Types of Questions
 
-```{r, out.width = "800px",out.height = "400px"}
-knitr::include_graphics("http://scientistcafe.com/book/Figure/DataScienceQuestion.png")
-```
+<center>
+![](http://scientistcafe.com/book/Figure/DataScienceQuestion.png){height=55%}
+</center>
+
 
 ## Types of Learning
 
-```{r, out.width = "800px",out.height = "400px"}
-knitr::include_graphics("http://scientistcafe.com/book/Figure/LearningStyles.png")
-```
+<center>
+![](http://scientistcafe.com/book/Figure/LearningStyles.png){height=100%}
+</center>
 
 ## Types of Algorithm (1)
 
 <center>
-![](images/AlogrithmTypes1.png){height=80%}
+![](images/AlogrithmTypes1.png){height=100%}
 </center>
 
 ## Types of Algorithm (2)
 
 <center>
-![](images/AlogrithmTypes2.png){height=80%}
+![](images/AlogrithmTypes2.png){height=100%}
 </center>
 
 ## Types of Algorithm (3)
 
 <center>
-![](images/AlogrithmTypes3.png){height=80%}
+![](images/AlogrithmTypes3.png){height=100%}
 </center>
 
 ## Data Scientist Skill Set
