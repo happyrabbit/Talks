@@ -47,7 +47,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ## What is data scientist?
 
 ```{r, out.width = "850px",out.height = "400px"}
-knitr::include_graphics("http://linhui.org/images/Jokes/datascientist.png")
+knitr::include_graphics("images/datascientist.png")
 ```
 
 ## What is data scientist?
@@ -143,3 +143,4 @@ knitr::include_graphics("http://scientistcafe.com/book/Figure/AlogrithmTypes.png
     - [R for Marketing Research and Analytics](http://r-marketing.r-forge.r-project.org)
     - [套路！机器学习](http://scientistcafe.com/book/)
 
+- [Awesome-Data-Science-Materials](https://github.com/happyrabbit/Awesome-Data-Science-Materials)
