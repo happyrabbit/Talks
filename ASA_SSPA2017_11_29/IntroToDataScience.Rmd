@@ -41,17 +41,17 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## What is data science?
 
-- The web site for DSI gives us an idea what Data Science is:
+- The website for DSI gives us an idea what Data Science is:
 
 > “This coupling of scientific discovery and practice involves the collection, management, processing, analysis, visualization, and interpretation of vast amounts of heterogeneous data associated with a diverse array of scientific, translational, and interdisciplinary applications.”
 
-## What is data scientist?
+## What is a data scientist?
 
 ```{r, out.width = "850px",out.height = "400px"}
 knitr::include_graphics("images/datascientist.png")
 ```
 
-## What is data scientist?
+## What is a data scientist?
 
 Here is a list of definitions for a “data scientist”:
 
@@ -85,7 +85,7 @@ Here is a list of definitions for a “data scientist”:
 
 - Specific
     1. How can we increase sales?
-    1. Dose the January campaign on product X increase the amount of purcahse from our 2017 retained customers? 
+    1. Does the January campaign on product X increase the amount of purchase from our 2017 retained customers? 
 
 - Data
     1. Representative
