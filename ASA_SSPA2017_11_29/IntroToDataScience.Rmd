@@ -1,11 +1,12 @@
 ---
 title: "Introduction to Data Science"
-author: "[Hui Lin](http://scientistcafe.com), DowDuPont"
+author: '[Hui Lin](http://scientistcafe.com), DowDuPont'
 date: "Nov 29, 2017"
-output: 
-  slidy_presentation: 
-    footer: "http://scientistcafe.com"
+output:
+  beamer_presentation: default
   ioslides_presentation: default
+  slidy_presentation:
+    footer: http://scientistcafe.com
 ---
 
 ```{r setup, include=FALSE}
