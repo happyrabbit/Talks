@@ -136,7 +136,7 @@ knitr::include_graphics("http://scientistcafe.com/book/Figure/AlogrithmTypes.png
 - Online books:
     - [The Elements of Statistical Learning](http://web.stanford.edu/~hastie/ElemStatLearn/)
     - [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/)
-    - [The Science and Art of Data](http://scientistcafe.com/CE_JSM2017/)
+    - [Introduction to Data Science](http://scientistcafe.com/IDS/)
 
 - Hard copy books:
     - [Applied Predictive Modeling](http://appliedpredictivemodeling.com)
