@@ -111,19 +111,21 @@ knitr::include_graphics("http://scientistcafe.com/book/Figure/LearningStyles.png
 
 ## Types of Algorithm (1)
 
+<center>
 ![](images/AlogrithmTypes1.png){height=80%}
+</center>
 
 ## Types of Algorithm (2)
 
-```{r, out.width = "600px",out.height = "900px"}
-knitr::include_graphics("images/AlogrithmTypes2.png")
-```
+<center>
+![](images/AlogrithmTypes2.png){height=80%}
+</center>
 
 ## Types of Algorithm (3)
 
-```{r, out.width = "600px",out.height = "900px"}
-knitr::include_graphics("images/AlogrithmTypes3.png")
-```
+<center>
+![](images/AlogrithmTypes3.png){height=80%}
+</center>
 
 ## Data Scientist Skill Set
 
