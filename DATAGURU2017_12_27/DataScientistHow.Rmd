@@ -1,0 +1,86 @@
+---
+title: "如何成为一名数据科学家？"
+author: '[Hui Lin](http://scientistcafe.com), DowDuPont'
+date: "2017/12/27 @ DATAGURU"
+output:
+  slidy_presentation:
+    footer: http://scientistcafe.com
+  ioslides_presentation: default
+  beamer_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## 
+
+<img src="images/DataScienceTrend2004.PNG" alt="HTML5 Icon" style="width:900px;height:500px;">
+
+
+## Brief History
+
+<center>
+![](http://scientistcafe.com/book/Figure/DataScienceTimeline.png){width=90%}
+</center>
+
+## Types of Learning
+
+<center>
+![](http://scientistcafe.com/book/Figure/LearningStyles.png){height=100%}
+</center>
+
+## Types of Algorithm (1) 
+
+- http://scientistcafe.com/2017/07/08/MachineLearningAl.html
+
+<center>
+![](images/AlogrithmTypes1.png){height=100%}
+</center>
+
+
+## Types of Algorithm (2)
+
+- http://scientistcafe.com/2017/07/08/MachineLearningAl.html
+
+<center>
+![](images/AlogrithmTypes2.png){height=100%}
+</center>
+
+## Types of Algorithm (3)
+
+- http://scientistcafe.com/2017/07/08/MachineLearningAl.html
+
+<center>
+![](images/AlogrithmTypes3.png){height=100%}
+</center>
+
+## Data Scientist Skill Set
+
+![](http://scientistcafe.com/book/Figure/SkillEN.png){width=100%}
+
+
+
+## General Process 
+
+![](http://scientistcafe.com/book/Figure/GeneralProcessEN.png){width=100%}
+
+## Automatic Data Science Pipeline
+
+![](http://scientistcafe.com/book/Figure/AutomaticDataPipeline.png){width=100%}
+
+## Some links
+
+- [Types of Machine Learning Algorithm](http://scientistcafe.com/2017/07/08/MachineLearningAl.html)
+
+- Online books:
+    - [The Elements of Statistical Learning](http://web.stanford.edu/~hastie/ElemStatLearn/)
+    - [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/)
+    - [Introduction to Data Science](http://scientistcafe.com/IDS/)(still writing)
+
+- Hard copy books:
+    - [Applied Predictive Modeling](http://appliedpredictivemodeling.com)
+    - [R for Marketing Research and Analytics](http://r-marketing.r-forge.r-project.org)
+    - [套路！机器学习](http://scientistcafe.com/book/)
+
+- [Awesome-Data-Science-Materials](https://github.com/happyrabbit/Awesome-Data-Science-Materials)
