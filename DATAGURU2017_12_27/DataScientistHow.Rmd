@@ -19,16 +19,16 @@ knitr::opts_chunk$set(echo = FALSE)
 - 个人网页：http://linhui.org
 - 联系方式：
     - Email：longqiman@gmail.com
-    - Twitter：@gossip_rabbit
+    - Twitter：[\@gossip_rabbit](https://twitter.com/gossip_rabbit)
     - LinkedIn：https://www.linkedin.com/in/hui-lin-81653855/
 
 ## 数据链全景图
 
-![](http://scientistcafe.com/book/Figure/AutomaticDataPipeline.png){width=100%}
+![](images/DataPipeline.png){width=100%}
 
 ## 数据科学家技能图
 
-![](images/SkillChart.png){height=100%}
+![](images/SkillChart.png){width=100%}
 
 
 ## Types of Learning
