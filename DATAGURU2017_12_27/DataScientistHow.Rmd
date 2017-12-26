@@ -28,6 +28,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## 数据科学家技能图
 
+![](images/SkillChart.png){height=100%}
+
+
 ## Types of Learning
 
 <center>
