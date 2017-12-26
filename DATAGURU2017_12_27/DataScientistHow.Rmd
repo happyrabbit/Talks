@@ -13,6 +13,8 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## 数据链全景图
+
 ## 
 
 <img src="images/DataScienceTrend2004.PNG" alt="HTML5 Icon" style="width:900px;height:500px;">
@@ -65,7 +67,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ![](http://scientistcafe.com/book/Figure/GeneralProcessEN.png){width=100%}
 
-## Automatic Data Science Pipeline
+## 数据链全景图
 
 ![](http://scientistcafe.com/book/Figure/AutomaticDataPipeline.png){width=100%}
 
