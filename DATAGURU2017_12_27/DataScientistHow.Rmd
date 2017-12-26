@@ -13,18 +13,20 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## 关于我
+
+- 专业背景：http://scientistcafe.com/cv.pdf
+- 个人网页：http://linhui.org
+- 联系方式：
+    - Email：longqiman@gmail.com
+    - Twitter：@gossip_rabbit
+    - LinkedIn：https://www.linkedin.com/in/hui-lin-81653855/
+
 ## 数据链全景图
 
-## 
+![](http://scientistcafe.com/book/Figure/AutomaticDataPipeline.png){width=100%}
 
-<img src="images/DataScienceTrend2004.PNG" alt="HTML5 Icon" style="width:900px;height:500px;">
-
-
-## Brief History
-
-<center>
-![](http://scientistcafe.com/book/Figure/DataScienceTimeline.png){width=90%}
-</center>
+## 数据科学家技能图
 
 ## Types of Learning
 
@@ -56,20 +58,6 @@ knitr::opts_chunk$set(echo = FALSE)
 <center>
 ![](images/AlogrithmTypes3.png){height=100%}
 </center>
-
-## Data Scientist Skill Set
-
-![](http://scientistcafe.com/book/Figure/SkillEN.png){width=100%}
-
-
-
-## General Process 
-
-![](http://scientistcafe.com/book/Figure/GeneralProcessEN.png){width=100%}
-
-## 数据链全景图
-
-![](http://scientistcafe.com/book/Figure/AutomaticDataPipeline.png){width=100%}
 
 ## Some links
 
