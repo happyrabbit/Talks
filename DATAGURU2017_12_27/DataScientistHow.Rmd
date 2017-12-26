@@ -16,7 +16,6 @@ knitr::opts_chunk$set(echo = FALSE)
 ## 关于我
 
 - 专业背景：http://scientistcafe.com/cv.pdf
-- 个人网页：http://linhui.org
 - 联系方式：
     - Email：longqiman@gmail.com
     - Twitter：[\@gossip_rabbit](https://twitter.com/gossip_rabbit)
@@ -31,13 +30,9 @@ knitr::opts_chunk$set(echo = FALSE)
 ![](images/SkillChart.png){width=100%}
 
 
-## Types of Learning
 
-<center>
-![](http://scientistcafe.com/book/Figure/LearningStyles.png){height=100%}
-</center>
 
-## Types of Algorithm (1) 
+## 算法类型 (1) 
 
 - http://scientistcafe.com/2017/07/08/MachineLearningAl.html
 
@@ -45,8 +40,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ![](images/AlogrithmTypes1.png){height=100%}
 </center>
 
-
-## Types of Algorithm (2)
+## 算法类型 (2)
 
 - http://scientistcafe.com/2017/07/08/MachineLearningAl.html
 
@@ -54,7 +48,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ![](images/AlogrithmTypes2.png){height=100%}
 </center>
 
-## Types of Algorithm (3)
+## 算法类型 (3)
 
 - http://scientistcafe.com/2017/07/08/MachineLearningAl.html
 
@@ -62,7 +56,25 @@ knitr::opts_chunk$set(echo = FALSE)
 ![](images/AlogrithmTypes3.png){height=100%}
 </center>
 
-## Some links
+## 如何获取相关技能
+
+- 大学研究生教育
+
+- MOOC
+
+- 讲座和会议
+
+## 数据科学的坑
+
+- 会用函数跑模型就可以了。
+
+- 模型精确度越高越好。
+
+- 技术过硬就是尚方宝剑。
+
+- 不明觉厉。
+
+## 数据科学学习资源
 
 - [Types of Machine Learning Algorithm](http://scientistcafe.com/2017/07/08/MachineLearningAl.html)
 
