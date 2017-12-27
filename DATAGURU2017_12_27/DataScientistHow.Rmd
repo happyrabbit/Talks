@@ -78,12 +78,12 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - [Types of Machine Learning Algorithm](http://scientistcafe.com/2017/07/08/MachineLearningAl.html)
 
-- Online books:
+- 在线书：
     - [The Elements of Statistical Learning](http://web.stanford.edu/~hastie/ElemStatLearn/)
     - [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/)
     - [Introduction to Data Science](http://scientistcafe.com/IDS/)(still writing)
 
-- Hard copy books:
+- 纸质书:
     - [Applied Predictive Modeling](http://appliedpredictivemodeling.com)
     - [R for Marketing Research and Analytics](http://r-marketing.r-forge.r-project.org)
     - [套路！机器学习](http://scientistcafe.com/book/)
