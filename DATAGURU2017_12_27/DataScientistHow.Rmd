@@ -23,11 +23,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## 数据链全景图
 
-![](images/DataPipeline.png){width=100%}
+![](images/DataPipeline.png){width=80%}
 
 ## 数据科学家技能图
 
-![](images/SkillChart.png){width=100%}
+![](images/SkillChart.png){width=80%}
 
 
 
