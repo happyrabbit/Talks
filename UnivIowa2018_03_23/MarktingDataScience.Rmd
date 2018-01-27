@@ -16,10 +16,9 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Outline
 
 - Slides: http://scientistcafe.com/IDS/slides/IntroToDataScience.html
-- What is marketing data science?
-- Brief history
-- What questions can data science answer? 
-- Types of Learning
-- Types of Algorithm
-- Data Scientist Skill Set
-- Data Science Pipeline
+- What is marketing data science? What value can data science bring?
+- Predictive Analytics: parametric model and ensemble method
+- Unstructured data analytics: digital marketing
+- Market research analytics
+- Case Study: Group Lasso Logistic Regression for Customer Retention
+- Data Scientist Skill Set & How can you get in?
