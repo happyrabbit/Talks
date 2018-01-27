@@ -1,0 +1,25 @@
+---
+title: "Marketing Data Science"
+author: '[Hui Lin](http://scientistcafe.com), DowDuPont'
+date: "2018/03/23 @ University of Iowa"
+output:
+  slidy_presentation:
+    footer: http://scientistcafe.com
+  ioslides_presentation: default
+  beamer_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Outline
+
+- Slides: http://scientistcafe.com/IDS/slides/IntroToDataScience.html
+- What is marketing data science?
+- Brief history
+- What questions can data science answer? 
+- Types of Learning
+- Types of Algorithm
+- Data Scientist Skill Set
+- Data Science Pipeline
