@@ -1,7 +1,7 @@
 ---
 title: "Case Study: Customer Retention"
 author: '[Hui Lin](http://scientistcafe.com)'
-date: "2017/11/29 @ ASA"
+date: "`r Sys.Date()`"
 output:
   slidy_presentation:
     footer: http://scientistcafe.com
@@ -75,6 +75,10 @@ where $l(\mathbf{\beta})$ is log-likelihood:
 where 
 
 $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g}^{T}(y-\bar{y})}\parallel_{2}}$$
+
+- Train/Test/One year holdout
+
+## Cut-off Tuning
 
 ## Model Comparison
 
