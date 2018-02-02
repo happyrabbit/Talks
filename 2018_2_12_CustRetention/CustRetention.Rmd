@@ -23,9 +23,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - What is the likelihood a customer will purchase?
 - What are the key drivers?
-
-Clarification questions:
-
 - Who are our customers?
 - Are there different segments of customers?
 - What is a purchase?  
@@ -67,7 +64,7 @@ where $l(\mathbf{\beta})$ is log-likelihood:
 
   $$\Sigma_{i=1}^{n}\{y_{i}\eta_{\beta}(\mathbf{x_{i}})-log[1+exp(\eta_{\beta}(\mathbf{x_{i}}))]\}$$
 
-## Model Training and Testing
+## Performance Measure
 
 - Maximize AUC
 - Grid of 148 values $${0.96\lambda_{max},0.96^{2}\lambda_{max},\dots,0.96^{148}\lambda_{max}}$$ 
@@ -76,7 +73,12 @@ where
 
 $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g}^{T}(y-\bar{y})}\parallel_{2}}$$
 
-- Train/Test/One year holdout
+## Model Training and Testing
+
+
+- 70/30 (Train/Test)
+- 10-fold cross validation (Train)
+- Double check: one year holdout
 
 ## Cut-off Tuning
 
@@ -85,7 +87,6 @@ $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g
 - Traditional Stepwise Regression
 - Random Forest
 - SVM
-- C4.5
 - Neural Network
 
 > Essentially, all models are wrong, but some are useful.

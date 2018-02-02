@@ -34,9 +34,6 @@
 <ul>
 <li>What is the likelihood a customer will purchase?</li>
 <li>What are the key drivers?</li>
-</ul>
-<p>Clarification questions:</p>
-<ul>
 <li>Who are our customers?</li>
 <li>Are there different segments of customers?</li>
 <li>What is a purchase?<br />
@@ -91,9 +88,13 @@
 <li>Grid of 148 values <span class="math display">\[{0.96\lambda_{max},0.96^{2}\lambda_{max},\dots,0.96^{148}\lambda_{max}}\]</span></li>
 </ul>
 <p>where</p>
-<p><span class="math display">\[\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g}^{T}(y-\bar{y})}\parallel_{2}}\]</span></p>
+</div>
+<div id="lambda_maxmax_gin-1dotsgfrac1sdf_gparallel-mathbfx_gty-baryparallel_2" class="slide section level2">
+<h1><span class="math display">\[\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g}^{T}(y-\bar{y})}\parallel_{2}}\]</span></h1>
 <ul>
-<li>Train/Test/One year holdout</li>
+<li>70/30 (Train/Test)</li>
+<li>10-fold cross validation (Train)</li>
+<li>Double check: one year holdout</li>
 </ul>
 </div>
 <div id="cut-off-tuning" class="slide section level2">
@@ -105,7 +106,6 @@
 <li>Traditional Stepwise Regression</li>
 <li>Random Forest</li>
 <li>SVM</li>
-<li>C4.5</li>
 <li>Neural Network</li>
 </ul>
 <blockquote>

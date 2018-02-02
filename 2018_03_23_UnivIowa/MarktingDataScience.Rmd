@@ -22,3 +22,5 @@ knitr::opts_chunk$set(echo = FALSE)
 - Market research analytics
 - Case Study: Group Lasso Logistic Regression for Customer Retention
 - Data Scientist Skill Set & How can you get in?
+
+## What is data science? 
