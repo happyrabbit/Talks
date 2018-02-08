@@ -19,6 +19,12 @@ knitr::opts_chunk$set(echo = FALSE)
 - Follow the data science project circle
 - Elaborate the technical parts
 
+## 
+
+```{r, out.width = "750px",out.height = "500px"}
+knitr::include_graphics("images/GeneralProcessEN.png")
+```
+
 ## Question
 
 - What is the likelihood a customer will purchase?
