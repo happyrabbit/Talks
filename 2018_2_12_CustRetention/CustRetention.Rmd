@@ -30,14 +30,14 @@ knitr::opts_chunk$set(echo = FALSE)
 2. What are the key drivers?
 
 
-- Who are our customers?
-- Are there different segments of customers?
-- What is a purchase?  
-- How far ahead do we need to predict?
-- What are the predictors? 
-- What is the quality of the data?
-- Where are different data sets located?
-- ...
+> - Who are our customers?
+    - Are there different segments of customers?
+    - What is a purchase?  
+    - How far ahead do we need to predict?
+    - What are the predictors? 
+    - What is the quality of the data?
+    - Where are different data sets located?
+    - ...
 
 ## Project Cycle
 
@@ -54,6 +54,10 @@ knitr::opts_chunk$set(echo = FALSE)
     - large positive number 
     - counts
     - $x_{ij}^{*} = \frac{x_{ij} - quantile(x_{.j}, 0.01)}{quantile(x_{.j, 0.99})- quantile(x_{.j}, 0.01)}$
+
+## Project Cycle
+
+![](images/GeneralProcessEN.png){width=90%}
 
 ## Model 
 
@@ -92,6 +96,7 @@ $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g
 
 ## Cut-off Tuning
 
+
 ## Model Comparison
 
 - Traditional Stepwise Regression
@@ -100,3 +105,6 @@ $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g
 - Neural Network
 
 > Essentially, all models are wrong, but some are useful.
+
+## About AUC
+
