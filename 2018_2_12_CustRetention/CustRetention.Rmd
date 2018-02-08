@@ -19,16 +19,17 @@ knitr::opts_chunk$set(echo = FALSE)
 - Follow the data science project circle
 - Elaborate the technical parts
 
-## 
+## Project Cycle
 
-```{r, out.width = "750px",out.height = "500px"}
-knitr::include_graphics("images/GeneralProcessEN.png")
-```
+![](images/GeneralProcessEN.png){width=90%}
 
-## Question
 
-- What is the likelihood a customer will purchase?
-- What are the key drivers?
+## Business Questions
+
+1. What is the likelihood a customer will purchase?
+2. What are the key drivers?
+
+
 - Who are our customers?
 - Are there different segments of customers?
 - What is a purchase?  
@@ -38,6 +39,9 @@ knitr::include_graphics("images/GeneralProcessEN.png")
 - Where are different data sets located?
 - ...
 
+## Project Cycle
+
+![](images/GeneralProcessEN.png){width=90%}
 
 ## Data Preprocessing
 
