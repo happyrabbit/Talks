@@ -1,0 +1,279 @@
+---
+title: "用R进行市场调查和消费者感知分析"
+author: "林荟"
+date: "`r Sys.Date()`"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(readr)
+library(dplyr)
+```
+
+## 介绍
+
+- 幻灯片 & R代码：http://scientistcafe.com
+- 什么是数据科学家
+    - 澄清定义：行业现状，分布，教育技能要求等
+    - http://www.xueqing.tv/course/55
+- 用R做数据预处理
+    - 数据分析的一般流程：问题到数据，数据到信息，信息到价值  
+    - http://www.xueqing.tv/course/66
+- 数据整合操作和建模辅助技术
+    - http://www.xueqing.tv/course/67
+- 用R进行市场调查和消费者感知分析
+    - 相对完整的分析框架
+    - 理解数据分析的一般流程
+
+## 数据分析一般流程
+
+<img src="/Users/happyrabbit/Documents/GitHub/linhui.org/book/Figure/GernalProcess.png" width="800px" />
+
+## 问题到数据-理解问题
+
+- 理解客户的问题：谁是客户（某航空公司）？交流，交流，交流！
+  <!--假设你是某航空公司市场部的数据科学家，关于数据科学家，商业分析师，统计师的区别，我在之前什么是数据科学家那集视频里有讲到。感兴趣的在雪晴数据网上出门左转就可以看到。-->
+- 问题要具体
+    - 某航空公司: 乘客体验如何？哪方面需要提高？
+    <!--假设领导关心，领导需要。领导不关心的问题短期内是没有未来的，我说的短期可能是大部分人的有生之年。这在中国美国都一样。人性的问题。扯远了。以后我们可以专门找个时间，开个负能量专场什么的哈。这里假设这是一个政治正确的问题。看过我之前视频的可能马上意识到，这个问题其实很模糊。哪方面的乘客体验？-->
+    <!--微信居然能打赏，我真心很兴奋-->
+    - 类别：比较、描述、聚类，判别还是回归
+    - 需要什么样的数据：现有数据，数据质量，需要收集的数据，自变量，因变量
+    - 哪些方面的满意度？哪些主要竞争对手？
+    - 内部数据？外部数据？
+
+## 问题到数据-设计问卷
+
+礼貌（Courtesy）  
+友善（Friendliness）   
+能够提供需要的帮助（Helpfulness）   
+食物饮料服务（Service）  
+购票容易度（Easy_Reservation）     
+座椅选择（Preferred_Seats）   
+航班选择（Flight_Options）    
+票价（Ticket_Prices）    
+座椅舒适度（Seat_Comfort）   
+位置前后空间（Seat_Roominess）   
+随机行李存放（Overhead_Storage）   
+机舱清洁（Clean_Aircraft）   
+总体满意度（Satisfaction）    
+再次选择次航空公司（Fly_Again）   
+向朋友推荐此航空公司（Recommend）  
+
+<!--
+|空航服务相关|购票体验相关|
+|----------|----------|
+|礼貌（Courtesy）|购票容易度（Easy_Reservation）|
+|友善（Friendliness）|座椅选择（Preferred_Seats）|
+|能够提供需要的帮助（Helpfulness）|航班选择（Flight_Options）|
+|食物饮料服务（Service）|票价（Ticket_Prices）|
+
+</br>
+
+|机舱设施|总体评估指数|
+|----------|----------|
+|座椅舒适度（Seat_Comfort）|总体满意度（Satisfaction）|
+|位置前后空间（Seat_Roominess）|再次选择次航空公司（Fly_Again）|
+|随机行李存放（Overhead_Storage）|向朋友推荐此航空公司（Recommend）|
+|机舱清洁（Clean_Aircraft）| |
+-->
+
+## 数据到信息
+
+- 流程图：数据准备，数据清理，建模和模型评估
+- 数据预处理：清理、变换、缺失值填补等 （非常重要且耗时）
+  <!--我在之前用R做数据预处理那集视频里有讲到各种数据预处理的方法。感兴趣的在雪晴数据网上出门左转就可以看到。-->
+- 建模和评估：
+    - 分析用户感知：特征提取
+    <!--特征提取是一项用不同变量的组合代替原变量的技术。它的目的是自动地构建新的特征，将原始特征转换为一组具有明显物理意义或者统计意义的特征。比如通过变换特征取值来减少原始数据中某个特征的取值个数等。-->
+    - PCA，EFA
+    <!--我们考虑3个常用的可以对数据降维的特征提取方法。主成分分析（PCA）试图找到原变量的不相关线性组合，这些线性组合能够最大限度的解释原数据中变量方差。探索性因子分析（EFA）同样试图在尽量小的维度上解释原数据中尽可能多的方差。高维标度化（MDS）将观测见的相似度映射到低维度上，如2维平面。MDS能够作用于非数值型变量，如分类变量或者有序数据预测变量。接下来我们通过模拟的航空公司数据集来展示不同的特征提取方法。在市场营销中这类消费者调查问卷中，虽然初始问题很多，但通常存在多个调查项共同反应少数几个潜在因子。
+    有时间会讲EFA-->
+    - **评估标准**
+    
+
+## 数据到信息-数据
+    
+```{r,message=FALSE}
+# 可以从网站下载该数据
+airline<-read.csv("/Users/happyrabbit/Documents/GitHub/DataScientistR/Data/AirlineRating.csv")
+glimpse(airline)
+```
+
+## 数据到信息-检查相关性
+
+```{r}
+library(corrplot)
+# 选取其中的问卷调查项
+select(airline,Easy_Reservation:Recommend)%>%
+  # 得到相关矩阵
+  cor()%>%
+  # 用corrplot()绘制相关图
+  # 选项order="hclust"按照变量的相似度，基于系统聚类的结果对行列进行重新排列
+  corrplot(,order="hclust")
+```
+
+## 数据到信息-主成分分析
+
+```{r,echo=TRUE}
+airline.pc<-select(airline,Easy_Reservation:Recommend)%>%
+  prcomp()
+summary(airline.pc)
+```
+## 数据到信息-主成分分析陡坡图
+
+```{r}
+plot(airline.pc,type="l",family ="Songti SC",main="PCA陡坡图")
+```
+
+## 数据到信息-主成分分析双标图
+
+```{r}
+biplot(airline.pc,family ="Songti SC",main="PCA双标图",cex=c(0.5,1),xlim=c(-0.06,0.04))
+```
+
+<!--满意度评分PCA结果的双标图中红色的箭头中看到不同调查问题的聚类情况，并且可以大致感觉样本的聚类情况，大致成为3类，一个合理的猜测是针对3个不同的航空公司。从之前的热图可以看到，3个公司有各自的优势和劣势，评分分布显然是不同的。但这样的图有个问题：基于所有评分样本导致图形非常稠密，难以识别。如果是基于各个公司聚合后的数据，得到的图或许会更清晰。-->
+
+## 数据到信息-数据聚合
+
+```{r}
+# 选取其中的问卷调查项和航空公司因子信息
+# 即删除ID项
+airline.mean<-select(airline,-ID)%>%
+  # 按Airline对数据进行分组总结
+  group_by(Airline)%>%
+  # 对每个数值
+  summarise_each(funs(mean))%>%
+  # 显示数据
+  glimpse()
+```
+
+## 数据到信息-聚合后双标图
+
+```{r}
+airline.mean.pc<-select(airline.mean,Easy_Reservation:Recommend)%>%
+  prcomp()
+biplot(airline.mean.pc,family ="Songti SC",main="聚合后PCA结果双标图",
+       cex=0.7, expand=2,xlim=c(-0.8, 1),ylim=c(-0.7,0.8))
+```
+
+<!--按航空公司聚合后的结果双标图提供了可解释的乘客**感知图**，该图展示了各个航空公司在前两个主成分上的定位。我们先和聚合前后的感知图进行比较。注意，感知图的空间旋转是任意的，重要的是箭头的相对位置。比如，在两个感知图中，`Courtesy`、`Friendliness`、`Service`和`Helpfulness`都几乎重叠。 `Seat_Comfort`、`Seat_Roominess`、`Overhead_Storage`、`Clean_Aircraft`、`Satisfaction`、`Fly_Again`和`Recommend`大致指向相同的方向。剩下的`Easy_Reservation`、`Preferred_Seats`、`Flight_Options`和`Ticket_Prices`紧密相连。因此聚合后变量在主成分纬度上的分布位置和用原始观测得到的一致，但基于公司平均分值的结果更清晰的展示了公司相对定位情况。航空公司3在机舱设施、总体满意度和空航服务上得分都较高。航空公司2在空航服务方面得分较高。航空公司1在购票体验上表现较好。且在购票体验上满意度高的乘客更不满空航服务。如果你是航空公司3的商业数据分析师，看到这样的结果你可以得到什么结果？
+-->
+
+## 数据到信息-可视化
+
+```{r,message=FALSE,warning=FALSE}
+library(gplots)
+library(RColorBrewer)
+# 将航空公司设置成行名称然后将对应的字符列删除
+row.names(airline.mean)<-airline.mean$Airline
+airline.mean<-select(airline.mean,-Airline)
+# 绘制热图
+heatmap.2(as.matrix(airline.mean),
+          col=brewer.pal(9,"YlGn"),trace="none",key=FALSE,dend="none",cexCol=0.6,cexRow =1)
+title(family ="Songti SC",
+      main="航空公司问卷调查均值热图")
+```
+
+## 数据到信息-探索性因子分析（EFA）
+
+- 获取抽样调查中问题之间的构造
+- 结果是一个因子矩阵，其目标是使一小部分变量对应较高的因子载荷，其余的因子载荷都很低
+- 为什么用因子分析：
+    - 使结果可实践，PCA很难实现
+    - 优化调查项，保留因子载荷高的项
+    - 探索调查项之间的联系是不是符合我们的期待
+    
+## 数据到信息-探索性因子分析（EFA）
+ 
+```{r}
+# 因子分析
+library(GPArotation)
+airline.fa<-airline%>%
+  subset(select=Easy_Reservation:Recommend)%>%
+  factanal(factors=3,rotation="oblimin")
+```
+
+```html
+Loadings:
+                 Factor1 Factor2 Factor3
+Easy_Reservation                  0.941 
+Preferred_Seats                   0.880 
+Flight_Options    0.167           0.803 
+Ticket_Prices                     0.887 
+Seat_Comfort      0.865                 
+Seat_Roominess    0.844  -0.242         
+Overhead_Storage  0.833   0.137  -0.142 
+Clean_Aircraft    0.708                 
+Courtesy                  0.818         
+Friendliness              0.868         
+Helpfulness               0.953         
+Service                   0.922         
+Satisfaction      0.921                 
+Fly_Again         0.943                 
+Recommend         0.942 
+```
+
+## 数据到信息-因子载荷热图
+
+Factor 1: 乘客的总体感觉  
+Factor 2: 机舱服务感知  
+Factor 3: 购票体验感知  
+```{r}
+library(gplots)
+library(RColorBrewer)
+# 绘制热图
+heatmap.2(airline.fa$loadings,
+          col=brewer.pal(9,"YlGn"),trace="none",key=FALSE,dend="none",cexCol=0.6,cexRow =0.6,main="")
+```
+ 
+
+## 数据到信息-平均因子分值热图
+
+Factor 1: 乘客的总体感觉  
+Factor 2: 机舱服务感知  
+Factor 3: 购票体验感知  
+```{r,warning=FALSE}
+# 因子得分
+airline.fa<-airline%>%
+  subset(select=Easy_Reservation:Recommend)%>%
+  factanal(factors=3,rotation="oblimin",scores="Bartlett")
+
+fa.score<-airline.fa$scores%>%
+  data.frame()
+
+fa.score$Airline<-airline$Airline
+
+fa.score.mean<-fa.score%>%
+  group_by(Airline)%>%
+  summarise(Factor1=mean(Factor1),
+            Factor2=mean(Factor2),
+            Factor3=mean(Factor3))
+
+row.names(fa.score.mean)<-as.character(fa.score.mean$Airline)
+fa.score.mean<-select(fa.score.mean,-Airline)
+heatmap.2(as.matrix(fa.score.mean),
+          col=brewer.pal(9,"YlGn"),trace="none",key=FALSE,dend="none",cexCol=0.6,cexRow =1,main="")
+```
+
+
+## 数据到信息-信息
+
+- 公司在很多方面具有竞争优势，客户满意度总体高于竞争对手
+- 公司在购票体验上有明显劣势，这是需要努力改进的地方
+- 我们为什么在购票体验上满意度高的乘客更不满空航服务？是因为乘客本身的特质，或是由于某种原因重视空航服务的公司容易忽视购票体验？
+- 需要进一步研究购票体验差的原因，以及评估其可能带来的影响：如果购票体验差并不会影响当前总体满意度以及票的销售情况，那我们需要投入多少改进该问题？
+
+
+## 信息到行动
+
+- 行业知识：
+    - 解释购票体验和空航服务体验的关系
+- 信息的接收者：哪些人员真正实践这些改进？交流、倾听和尊重
+- 讲故事的能力 
+
+**预告：**
+- 下周六晚上 郎大为会给大家介绍 REmap 就是一个用R语言生成echarts图的包
+- http://www.xueqing.tv/cms/article/10 
+
