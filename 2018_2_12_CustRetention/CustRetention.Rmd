@@ -125,23 +125,10 @@ $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g
 
 ## Cut-off Tuning
  
-- Ordered the score from high to low
-- Calculate the sensitivity and specificity as the cutoff changes
-- Get the cut-off values with corresponding likelihoods
-
-## Model Comparison
-
-- Traditional Stepwise Regression
-- Random Forest
-- SVM
-- Neural Network
-
-> Essentially, all models are wrong, but some are useful.
-
-## ROC
-
-- ROC curve: ( False Positive Rate, True Positive Rate) as cutoff value varies
--  If we use binary variable, D, to denote true outcome status: 
+1. Ordered the score from high to low
+2. Calculate the sensitivity and specificity as the cutoff changes
+3. Get the cut-off values with corresponding likelihoods
+- If we use binary variable, D, to denote true outcome status: 
 
 $$D=\begin{cases}
 \begin{array}{c}
@@ -163,17 +150,43 @@ predict\ purchase\\
 predict\ not purchase
 \end{array}\end{cases}$$
 
-$\mathbf{x_{i,g}}$ vector of predictors ( $i^{th}$ observation in group $g$ ) $i = 1,...,n , g = 1,...,G$
+$Specificity=true\ negative\ fraction=P[T=0|D=0]$
+$Sensitivity=true\ positive\ fraction=P[T=1|D=1]$
 
-$y_{i}$ binary response for the $i^{th}$ observation
+## Model Comparison
 
-$df_{g}$ degrees of freedom of group $g$
+- Traditional Stepwise Regression
+- Random Forest
+- SVM
+- Neural Network
 
-$\mathcal{S}_{\lambda}(\beta)=-l(\beta)+\lambda\sum_{g=1}^{G}s(df_{g})\parallel\beta_{g}\parallel_{2}$
+> Essentially, all models are wrong, but some are useful.
 
-$l(\beta)$ log-likelihood: $\sum_{i=1}^{n}\{y_{i}\eta_{\beta}(\mathbf{x_{i}})-log[1+exp(\eta_{\beta}(\mathbf{x_{i}}))]\}$
+## ROC
 
-$\lambda$ tuning parameter for penalty and $s(\centerdot)$ is $s(df_{g})=df_{g}^{0.5}$
+- ROC curve: ( False Positive Rate, True Positive Rate) as cutoff value varies
+
+-  If we use binary variable, D, to denote true outcome status: 
+
+$$D=\begin{cases}
+\begin{array}{c}
+1\\
+0
+\end{array} & \begin{array}{c}
+purchase\\
+not-purchase
+\end{array}\end{cases}$$
+
+The variable T is the result of the model.
+
+$$T=\begin{cases}
+\begin{array}{c}
+1\\
+0
+\end{array} & \begin{array}{c}
+predict\ purchase\\
+predict\ not purchase
+\end{array}\end{cases}$$
 
 $1-Specificity=false\ positive\ fraction=FPF=P[T=1|D=0]$
 

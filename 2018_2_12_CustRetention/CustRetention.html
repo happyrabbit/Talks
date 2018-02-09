@@ -148,28 +148,12 @@
 </div>
 <div id="cut-off-tuning" class="slide section level2">
 <h2>Cut-off Tuning</h2>
-<ul>
+<ol style="list-style-type: decimal">
 <li>Ordered the score from high to low</li>
 <li>Calculate the sensitivity and specificity as the cutoff changes</li>
 <li>Get the cut-off values with corresponding likelihoods</li>
-</ul>
-</div>
-<div id="model-comparison" class="slide section level2">
-<h2>Model Comparison</h2>
+</ol>
 <ul>
-<li>Traditional Stepwise Regression</li>
-<li>Random Forest</li>
-<li>SVM</li>
-<li>Neural Network</li>
-</ul>
-<blockquote>
-<p>Essentially, all models are wrong, but some are useful.</p>
-</blockquote>
-</div>
-<div id="roc" class="slide section level2">
-<h2>ROC</h2>
-<ul>
-<li>ROC curve: ( False Positive Rate, True Positive Rate) as cutoff value varies</li>
 <li>If we use binary variable, D, to denote true outcome status:</li>
 </ul>
 <p><span class="math display">\[D=\begin{cases}
@@ -189,12 +173,43 @@ not-purchase
 predict\ purchase\\
 predict\ not purchase
 \end{array}\end{cases}\]</span></p>
-<p><span class="math inline">\(\mathbf{x_{i,g}}\)</span> vector of predictors ( <span class="math inline">\(i^{th}\)</span> observation in group <span class="math inline">\(g\)</span> ) <span class="math inline">\(i = 1,...,n , g = 1,...,G\)</span></p>
-<p><span class="math inline">\(y_{i}\)</span> binary response for the <span class="math inline">\(i^{th}\)</span> observation</p>
-<p><span class="math inline">\(df_{g}\)</span> degrees of freedom of group <span class="math inline">\(g\)</span></p>
-<p><span class="math inline">\(\mathcal{S}_{\lambda}(\beta)=-l(\beta)+\lambda\sum_{g=1}^{G}s(df_{g})\parallel\beta_{g}\parallel_{2}\)</span></p>
-<p><span class="math inline">\(l(\beta)\)</span> log-likelihood: <span class="math inline">\(\sum_{i=1}^{n}\{y_{i}\eta_{\beta}(\mathbf{x_{i}})-log[1+exp(\eta_{\beta}(\mathbf{x_{i}}))]\}\)</span></p>
-<p><span class="math inline">\(\lambda\)</span> tuning parameter for penalty and <span class="math inline">\(s(\centerdot)\)</span> is <span class="math inline">\(s(df_{g})=df_{g}^{0.5}\)</span></p>
+<p><span class="math inline">\(Specificity=true\ negative\ fraction=P[T=0|D=0]\)</span> <span class="math inline">\(Sensitivity=true\ positive\ fraction=P[T=1|D=1]\)</span></p>
+</div>
+<div id="model-comparison" class="slide section level2">
+<h2>Model Comparison</h2>
+<ul>
+<li>Traditional Stepwise Regression</li>
+<li>Random Forest</li>
+<li>SVM</li>
+<li>Neural Network</li>
+</ul>
+<blockquote>
+<p>Essentially, all models are wrong, but some are useful.</p>
+</blockquote>
+</div>
+<div id="roc" class="slide section level2">
+<h2>ROC</h2>
+<ul>
+<li><p>ROC curve: ( False Positive Rate, True Positive Rate) as cutoff value varies</p></li>
+<li><p>If we use binary variable, D, to denote true outcome status:</p></li>
+</ul>
+<p><span class="math display">\[D=\begin{cases}
+\begin{array}{c}
+1\\
+0
+\end{array} &amp; \begin{array}{c}
+purchase\\
+not-purchase
+\end{array}\end{cases}\]</span></p>
+<p>The variable T is the result of the model.</p>
+<p><span class="math display">\[T=\begin{cases}
+\begin{array}{c}
+1\\
+0
+\end{array} &amp; \begin{array}{c}
+predict\ purchase\\
+predict\ not purchase
+\end{array}\end{cases}\]</span></p>
 <p><span class="math inline">\(1-Specificity=false\ positive\ fraction=FPF=P[T=1|D=0]\)</span></p>
 <p><span class="math inline">\(Sensitivity=true\ positive\ fraction=RPF=P[T=1|D=1]\)</span></p>
 </div>
