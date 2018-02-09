@@ -29,15 +29,23 @@ knitr::opts_chunk$set(echo = FALSE)
 1. What is the likelihood a customer will purchase?
 2. What are the key drivers?
 
+## Clarification Questions
 
-> - Who are our customers?
-    - Are there different segments of customers?
-    - What is a purchase?  
-    - How far ahead do we need to predict?
-    - What are the predictors? 
-    - What is the quality of the data?
-    - Where are different data sets located?
-    - ...
+- Who are our customers?
+- Are there different segments of customers?
+- What is a purchase?  
+- How far ahead do we need to predict?
+- What are the predictors? 
+- What is the quality of the data?
+- Where are different data sets located?
+- ...
+
+## Refined Question
+
+- Response: If a multi-year customer for a specific product line will purchase again next year
+
+- Predictors: 
+
 
 ## Project Cycle
 
@@ -59,24 +67,35 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ![](images/GeneralProcessEN.png){width=90%}
 
-## Model 
+## Multivariate logistic regression
 
-- Multivariate logistic regression
-    - Problems: quasi-complete-separation and significane based variable selection
-    - Solution: add penalty
+- $\mathbf{y}=(y_{1},y_{2},\dots,y_{n})^{T}$  binary response vector
+- $X=(\mathbf{x_{1}},\mathbf{x_{2}},\dots,\mathbf{x_{n}})^{T}$ design matrix in which each $\mathbf{x_{i}}$ is $p+1$ dimention column 
+- $\mathbf{\beta}=(\beta_{0},\dots,\beta_{p})^{T}$ parameter vector
 
-- Lasso: weighted L1-norm penalty [Tibshirani 1996]
-    - $\hat{\beta}_{\lambda}=argmin_{\beta}(\parallel\mathbf{Y-X}\beta\parallel_{2}^{2}+\lambda\Sigma_{j=1}^{p}|\beta_{j}|)$
-    - Advantage: stabilize the estimation, also a variable selection tool
-    - Limitation: only selects individual dummy variables, the estimates are affected by the way dummy variables are encoded (M. Yuan and Y. Lin, Model selection and estimation in regression with grouped variables, J. R. Stat. Soc. Ser. B Stat. Methodol. 68 (2007), pp.49-67)
+- The logliklihood function is as follows:
+
+$$ln\mathcal{L}(\boldsymbol{\beta}|\mathbf{y})=\sum_{i=1}^{n}\left\{ y_{i}ln\frac{1}{1+exp(-\mathbf{x_{i}}^{T}\mathbf{\boldsymbol{\beta}})}+(1-y_{i})ln\left[1-\frac{1}{1+exp(-\mathbf{x_{i}}^{T}\boldsymbol{\beta})}\right]\right\} $$
+
+$$D(\boldsymbol{\beta})\equiv\frac{\partial ln\mathcal{L}(\boldsymbol{\beta}|\mathbf{y})}{\partial\boldsymbol{\beta}}=\sum_{i=1}^{n}\left\{ y_{i}-\frac{1}{exp(-\mathbf{x_{i}}^{T}\boldsymbol{\beta})}\right\} \mathbf{x_{i}}$$
+
+- Problems: quasi-complete-separation and significane based variable selection
+- Solution: add penalty
+
+
+## Lasso: weighted L1-norm penalty [Tibshirani 1996]
+
+- $\hat{\beta}_{\lambda}=argmin_{\beta}(\parallel\mathbf{Y-X}\beta\parallel_{2}^{2}+\lambda\Sigma_{j=1}^{p}|\beta_{j}|)$
+- Advantage: stabilize the estimation, also a variable selection tool
+- Limitation: only selects individual dummy variables, the estimates are affected by the way dummy variables are encoded (M. Yuan and Y. Lin, Model selection and estimation in regression with grouped variables, J. R. Stat. Soc. Ser. B Stat. Methodol. 68 (2007), pp.49-67)
     
-- Group Lasso Logistic Regression
-    
-    $$S_{\lambda}(\mathbf{\beta})=-l(\mathbf{\beta})+\lambda\Sigma_{g=1}^{G}\sqrt{df_{g}}\parallel\mathbf{\beta_{g}}\parallel_{2}$$
+## Group Lasso Logistic Regression
+
+$$S_{\lambda}(\mathbf{\beta})=-l(\mathbf{\beta})+\lambda\Sigma_{g=1}^{G}\sqrt{df_{g}}\parallel\mathbf{\beta_{g}}\parallel_{2}$$
 
 where $l(\mathbf{\beta})$ is log-likelihood:
 
-  $$\Sigma_{i=1}^{n}\{y_{i}\eta_{\beta}(\mathbf{x_{i}})-log[1+exp(\eta_{\beta}(\mathbf{x_{i}}))]\}$$
+$$\Sigma_{i=1}^{n}\{y_{i}\eta_{\beta}(\mathbf{x_{i}})-log[1+exp(\eta_{\beta}(\mathbf{x_{i}}))]\}$$
 
 ## Performance Measure
 
