@@ -124,7 +124,10 @@ $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g
 - Double check: one year holdout
 
 ## Cut-off Tuning
-
+ 
+- Ordered the score from high to low
+- Calculate the sensitivity and specificity as the cutoff changes
+- Get the cut-off values with corresponding likelihoods
 
 ## Model Comparison
 
