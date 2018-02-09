@@ -119,9 +119,15 @@
 </div>
 <div id="group-lasso-logistic-regression" class="slide section level2">
 <h2>Group Lasso Logistic Regression</h2>
-<p><span class="math display">\[S_{\lambda}(\mathbf{\beta})=-l(\mathbf{\beta})+\lambda\Sigma_{g=1}^{G}\sqrt{df_{g}}\parallel\mathbf{\beta_{g}}\parallel_{2}\]</span></p>
+<ul>
+<li><p><span class="math inline">\(\mathbf{x_{i,g}}\)</span> vector of dummy variables ( <span class="math inline">\(i^{th}\)</span> observation in group <span class="math inline">\(g\)</span> ) <span class="math inline">\(i = 1,...,n , g = 1,...,G\)</span></p></li>
+<li><p><span class="math inline">\(y_{i}\)</span> binary response for the <span class="math inline">\(i^{th}\)</span> observation</p></li>
+<li><p><span class="math inline">\(df_{g}\)</span> degrees of freedom of group <span class="math inline">\(g\)</span></p></li>
+</ul>
+<p><span class="math display">\[\mathcal{S}_{\lambda}(\beta)=-l(\beta)+\lambda\sum_{g=1}^{G}s(df_{g})\parallel\beta_{g}\parallel_{2}\]</span></p>
 <p>where <span class="math inline">\(l(\mathbf{\beta})\)</span> is log-likelihood:</p>
 <p><span class="math display">\[\Sigma_{i=1}^{n}\{y_{i}\eta_{\beta}(\mathbf{x_{i}})-log[1+exp(\eta_{\beta}(\mathbf{x_{i}}))]\}\]</span></p>
+<p><span class="math inline">\(\lambda\)</span> tuning parameter for penalty and <span class="math inline">\(s(\centerdot)\)</span> is <span class="math inline">\(s(df_{g})=df_{g}^{0.5}\)</span></p>
 </div>
 <div id="performance-measure" class="slide section level2">
 <h2>Performance Measure</h2>
@@ -155,8 +161,58 @@
 <p>Essentially, all models are wrong, but some are useful.</p>
 </blockquote>
 </div>
-<div id="about-auc" class="slide section level2">
-<h2>About AUC</h2>
+<div id="roc" class="slide section level2">
+<h2>ROC</h2>
+<ul>
+<li>ROC curve: ( False Positive Rate, True Positive Rate) as cutoff value varies</li>
+<li>If we use binary variable, D, to denote true outcome status:</li>
+</ul>
+<p><span class="math display">\[D=\begin{cases}
+\begin{array}{c}
+1\\
+0
+\end{array} &amp; \begin{array}{c}
+purchase\\
+not-purchase
+\end{array}\end{cases}\]</span></p>
+<p>The variable T is the result of the model.</p>
+<p><span class="math display">\[T=\begin{cases}
+\begin{array}{c}
+1\\
+0
+\end{array} &amp; \begin{array}{c}
+predict\ purchase\\
+predict\ not purchase
+\end{array}\end{cases}\]</span></p>
+<p><span class="math inline">\(\mathbf{x_{i,g}}\)</span> vector of predictors ( <span class="math inline">\(i^{th}\)</span> observation in group <span class="math inline">\(g\)</span> ) <span class="math inline">\(i = 1,...,n , g = 1,...,G\)</span></p>
+<p><span class="math inline">\(y_{i}\)</span> binary response for the <span class="math inline">\(i^{th}\)</span> observation</p>
+<p><span class="math inline">\(df_{g}\)</span> degrees of freedom of group <span class="math inline">\(g\)</span></p>
+<p><span class="math inline">\(\mathcal{S}_{\lambda}(\beta)=-l(\beta)+\lambda\sum_{g=1}^{G}s(df_{g})\parallel\beta_{g}\parallel_{2}\)</span></p>
+<p><span class="math inline">\(l(\beta)\)</span> log-likelihood: <span class="math inline">\(\sum_{i=1}^{n}\{y_{i}\eta_{\beta}(\mathbf{x_{i}})-log[1+exp(\eta_{\beta}(\mathbf{x_{i}}))]\}\)</span></p>
+<p><span class="math inline">\(\lambda\)</span> tuning parameter for penalty and <span class="math inline">\(s(\centerdot)\)</span> is <span class="math inline">\(s(df_{g})=df_{g}^{0.5}\)</span></p>
+<p><span class="math inline">\(1-Specificity=false\ positive\ fraction=FPF=P[T=1|D=0]\)</span></p>
+<p><span class="math inline">\(Sensitivity=true\ positive\ fraction=RPF=P[T=1|D=1]\)</span></p>
+</div>
+<div id="auc" class="slide section level2">
+<h2>AUC</h2>
+<ul>
+<li><p>Assume sample of <span class="math inline">\(N\)</span> individuals undergo a test</p></li>
+<li><p><span class="math inline">\(C_{1}\)</span> —– positive group, size <span class="math inline">\(m\)</span></p></li>
+<li><p><span class="math inline">\(C_{2}\)</span> —– negative group, size <span class="math inline">\(N-m=n\)</span></p></li>
+<li><p><span class="math inline">\(X_{i}\)</span>—– individuals in <span class="math inline">\(C_{1}, i=1,...,m\)</span></p></li>
+<li><p><span class="math inline">\(Y_{j}\)</span>—– individuals in <span class="math inline">\(C_{2}, j=1,...,n\)</span></p></li>
+<li><p>For a cut-off value <span class="math inline">\(z\in\mathcal{R}\)</span></p></li>
+</ul>
+<p>– <span class="math inline">\(sensitivity(z)=\frac{1}{m}\sum_{i=1}^{m}I(X_{i}\geq z)\)</span></p>
+<p>– <span class="math inline">\(specificity(z)=\frac{1}{n}\sum_{j=1}^{n}I(Y_{j}&lt;z)\)</span></p>
+<blockquote>
+<p>Definition. For <span class="math inline">\(n\times m\)</span> array <span class="math inline">\((X_{i},Y_{j})\)</span>, Mann-Whitney test statistic U is defined as the number of <span class="math inline">\((X_{i},Y_{j})\)</span> pairs where <span class="math inline">\(X_{i}&gt;Y_{j}\)</span>.</p>
+</blockquote>
+<blockquote>
+<p>Result: AUC=P(sample from positive group&gt;sample from negative group) (P78, Result 4.6 Pepe2003)</p>
+</blockquote>
+<p><span class="math inline">\(\left[\begin{array}{cccc} (X_{1},Y_{1}) &amp; (X_{1},Y_{2}) &amp; ...... &amp; (X_{1},Y_{n})\\ (X_{2},Y_{1}) &amp; (X_{2},Y_{2}) &amp; ...... &amp; (X_{2},Y_{n})\\ ... &amp; ... &amp; ...... &amp; ...\\ (X_{m},Y_{1}) &amp; (X_{m},Y_{2}) &amp; ...... &amp; (X_{m},Y_{n}) \end{array}\right]_{m\times n}\)</span></p>
+<p>Count the propotion that <span class="math inline">\((X_{i}&gt;Y_{j})\)</span> ———–&gt; estimated AUC</p>
 </div>
 
   <!-- dynamically load mathjax for compatibility with self-contained -->

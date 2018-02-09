@@ -91,11 +91,21 @@ $$D(\boldsymbol{\beta})\equiv\frac{\partial ln\mathcal{L}(\boldsymbol{\beta}|\ma
     
 ## Group Lasso Logistic Regression
 
-$$S_{\lambda}(\mathbf{\beta})=-l(\mathbf{\beta})+\lambda\Sigma_{g=1}^{G}\sqrt{df_{g}}\parallel\mathbf{\beta_{g}}\parallel_{2}$$
+- $\mathbf{x_{i,g}}$ vector of dummy variables ( $i^{th}$ observation in group $g$ ) $i = 1,...,n , g = 1,...,G$
+
+- $y_{i}$ binary response for the $i^{th}$ observation
+
+- $df_{g}$ degrees of freedom of group $g$
+
+$$\mathcal{S}_{\lambda}(\beta)=-l(\beta)+\lambda\sum_{g=1}^{G}s(df_{g})\parallel\beta_{g}\parallel_{2}$$
 
 where $l(\mathbf{\beta})$ is log-likelihood:
 
 $$\Sigma_{i=1}^{n}\{y_{i}\eta_{\beta}(\mathbf{x_{i}})-log[1+exp(\eta_{\beta}(\mathbf{x_{i}}))]\}$$
+
+
+$\lambda$ tuning parameter for penalty and $s(\centerdot)$ is $s(df_{g})=df_{g}^{0.5}$
+
 
 ## Performance Measure
 
@@ -125,5 +135,75 @@ $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g
 
 > Essentially, all models are wrong, but some are useful.
 
-## About AUC
+## ROC
+
+- ROC curve: ( False Positive Rate, True Positive Rate) as cutoff value varies
+-  If we use binary variable, D, to denote true outcome status: 
+
+$$D=\begin{cases}
+\begin{array}{c}
+1\\
+0
+\end{array} & \begin{array}{c}
+purchase\\
+not-purchase
+\end{array}\end{cases}$$
+
+The variable T is the result of the model.
+
+$$T=\begin{cases}
+\begin{array}{c}
+1\\
+0
+\end{array} & \begin{array}{c}
+predict\ purchase\\
+predict\ not purchase
+\end{array}\end{cases}$$
+
+$\mathbf{x_{i,g}}$ vector of predictors ( $i^{th}$ observation in group $g$ ) $i = 1,...,n , g = 1,...,G$
+
+$y_{i}$ binary response for the $i^{th}$ observation
+
+$df_{g}$ degrees of freedom of group $g$
+
+$\mathcal{S}_{\lambda}(\beta)=-l(\beta)+\lambda\sum_{g=1}^{G}s(df_{g})\parallel\beta_{g}\parallel_{2}$
+
+$l(\beta)$ log-likelihood: $\sum_{i=1}^{n}\{y_{i}\eta_{\beta}(\mathbf{x_{i}})-log[1+exp(\eta_{\beta}(\mathbf{x_{i}}))]\}$
+
+$\lambda$ tuning parameter for penalty and $s(\centerdot)$ is $s(df_{g})=df_{g}^{0.5}$
+
+$1-Specificity=false\ positive\ fraction=FPF=P[T=1|D=0]$
+
+$Sensitivity=true\ positive\ fraction=RPF=P[T=1|D=1]$
+
+## AUC
+
+- Assume sample of $N$ individuals undergo a test
+
+- $C_{1}$ —– positive group, size $m$
+
+- $C_{2}$ —– negative group, size $N-m=n$
+
+- $X_{i}$—– individuals in $C_{1}, i=1,...,m$
+
+- $Y_{j}$—– individuals in $C_{2}, j=1,...,n$
+
+- For a cut-off value $z\in\mathcal{R}$
+
+– $sensitivity(z)=\frac{1}{m}\sum_{i=1}^{m}I(X_{i}\geq z)$
+
+– $specificity(z)=\frac{1}{n}\sum_{j=1}^{n}I(Y_{j}<z)$
+
+> Definition. For $n\times m$ array $(X_{i},Y_{j})$, Mann-Whitney test statistic U is defined as the number of $(X_{i},Y_{j})$ pairs where $X_{i}>Y_{j}$. 
+
+> Result: AUC=P(sample from positive group>sample from negative group) (P78, Result 4.6 Pepe2003)
+
+$\left[\begin{array}{cccc}
+(X_{1},Y_{1}) & (X_{1},Y_{2}) & ...... & (X_{1},Y_{n})\\
+(X_{2},Y_{1}) & (X_{2},Y_{2}) & ...... & (X_{2},Y_{n})\\
+... & ... & ...... & ...\\
+(X_{m},Y_{1}) & (X_{m},Y_{2}) & ...... & (X_{m},Y_{n})
+\end{array}\right]_{m\times n}$
+
+Count the propotion that $(X_{i}>Y_{j})$ ———–> estimated AUC 
 
