@@ -61,7 +61,7 @@
 <h2>Refined Question</h2>
 <ul>
 <li><p>Response: If a multi-year customer for a specific product line will purchase again next year</p></li>
-<li><p>Predictors:</p></li>
+<li><p>Predictors: other customer experience and behavior data</p></li>
 </ul>
 </div>
 <div id="project-cycle-1" class="slide section level2">
@@ -148,11 +148,6 @@
 </div>
 <div id="cut-off-tuning" class="slide section level2">
 <h2>Cut-off Tuning</h2>
-<ol style="list-style-type: decimal">
-<li>Ordered the score from high to low</li>
-<li>Calculate the sensitivity and specificity as the cutoff changes</li>
-<li>Get the cut-off values with corresponding likelihoods</li>
-</ol>
 <ul>
 <li>If we use binary variable, D, to denote true outcome status:</li>
 </ul>
@@ -174,6 +169,11 @@ predict\ purchase\\
 predict\ not purchase
 \end{array}\end{cases}\]</span></p>
 <p><span class="math inline">\(Specificity=true\ negative\ fraction=P[T=0|D=0]\)</span> <span class="math inline">\(Sensitivity=true\ positive\ fraction=P[T=1|D=1]\)</span></p>
+<ol class="incremental" style="list-style-type: decimal">
+<li>Ordered the score from high to low</li>
+<li>Calculate the sensitivity and specificity as the cutoff changes</li>
+<li>Get the cut-off values with corresponding likelihoods</li>
+</ol>
 </div>
 <div id="model-comparison" class="slide section level2">
 <h2>Model Comparison</h2>
