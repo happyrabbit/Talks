@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - General context without going into business details
 - Follow the data science project circle
-- Elaborate the technical parts
+- Focus on the technical parts
 
 ## Project Cycle
 
@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Business Questions
 
-1. What is the likelihood a customer will purchase?
+1. How likely will a customer purchase?
 2. What are the key drivers?
 
 ## Clarification Questions
@@ -42,7 +42,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Refined Question
 
-- Response: If a multi-year customer for a specific product line will purchase again next year
+- Response: if a corn multi-year customer will purchase again next year
 
 - Predictors: other customer experience and behavior data
 
@@ -147,8 +147,8 @@ predict\ purchase\\
 predict\ not purchase
 \end{array}\end{cases}$$
 
-$Specificity=true\ negative\ fraction=P[T=0|D=0]$
-$Sensitivity=true\ positive\ fraction=P[T=1|D=1]$
+$$Specificity=true\ negative\ fraction=P[T=0|D=0]$$
+$$Sensitivity=true\ positive\ fraction=P[T=1|D=1]$$
 
 >
 1. Ordered the score from high to low
@@ -164,6 +164,8 @@ $Sensitivity=true\ positive\ fraction=P[T=1|D=1]$
 - Neural Network
 
 > Essentially, all models are wrong, but some are useful.
+
+## Thank you!
 
 ## ROC
 
@@ -207,11 +209,7 @@ $Sensitivity=true\ positive\ fraction=RPF=P[T=1|D=1]$
 
 - $Y_{j}$—– individuals in $C_{2}, j=1,...,n$
 
-- For a cut-off value $z\in\mathcal{R}$
-
-– $sensitivity(z)=\frac{1}{m}\sum_{i=1}^{m}I(X_{i}\geq z)$
-
-– $specificity(z)=\frac{1}{n}\sum_{j=1}^{n}I(Y_{j}<z)$
+## AUC
 
 > Definition. For $n\times m$ array $(X_{i},Y_{j})$, Mann-Whitney test statistic U is defined as the number of $(X_{i},Y_{j})$ pairs where $X_{i}>Y_{j}$. 
 

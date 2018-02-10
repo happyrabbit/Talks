@@ -26,7 +26,7 @@
 <ul>
 <li>General context without going into business details</li>
 <li>Follow the data science project circle</li>
-<li>Elaborate the technical parts</li>
+<li>Focus on the technical parts</li>
 </ul>
 </div>
 <div id="project-cycle" class="slide section level2">
@@ -39,7 +39,7 @@
 <div id="business-questions" class="slide section level2">
 <h2>Business Questions</h2>
 <ol style="list-style-type: decimal">
-<li>What is the likelihood a customer will purchase?</li>
+<li>How likely will a customer purchase?</li>
 <li>What are the key drivers?</li>
 </ol>
 </div>
@@ -60,7 +60,7 @@
 <div id="refined-question" class="slide section level2">
 <h2>Refined Question</h2>
 <ul>
-<li><p>Response: If a multi-year customer for a specific product line will purchase again next year</p></li>
+<li><p>Response: if a corn multi-year customer will purchase again next year</p></li>
 <li><p>Predictors: other customer experience and behavior data</p></li>
 </ul>
 </div>
@@ -168,7 +168,7 @@ not-purchase
 predict\ purchase\\
 predict\ not purchase
 \end{array}\end{cases}\]</span></p>
-<p><span class="math inline">\(Specificity=true\ negative\ fraction=P[T=0|D=0]\)</span> <span class="math inline">\(Sensitivity=true\ positive\ fraction=P[T=1|D=1]\)</span></p>
+<p><span class="math display">\[Specificity=true\ negative\ fraction=P[T=0|D=0]\]</span> <span class="math display">\[Sensitivity=true\ positive\ fraction=P[T=1|D=1]\]</span></p>
 <ol class="incremental" style="list-style-type: decimal">
 <li>Ordered the score from high to low</li>
 <li>Calculate the sensitivity and specificity as the cutoff changes</li>
@@ -186,6 +186,9 @@ predict\ not purchase
 <blockquote>
 <p>Essentially, all models are wrong, but some are useful.</p>
 </blockquote>
+</div>
+<div id="thank-you" class="slide section level2">
+<h2>Thank you!</h2>
 </div>
 <div id="roc" class="slide section level2">
 <h2>ROC</h2>
@@ -221,10 +224,10 @@ predict\ not purchase
 <li><p><span class="math inline">\(C_{2}\)</span> —– negative group, size <span class="math inline">\(N-m=n\)</span></p></li>
 <li><p><span class="math inline">\(X_{i}\)</span>—– individuals in <span class="math inline">\(C_{1}, i=1,...,m\)</span></p></li>
 <li><p><span class="math inline">\(Y_{j}\)</span>—– individuals in <span class="math inline">\(C_{2}, j=1,...,n\)</span></p></li>
-<li><p>For a cut-off value <span class="math inline">\(z\in\mathcal{R}\)</span></p></li>
 </ul>
-<p>– <span class="math inline">\(sensitivity(z)=\frac{1}{m}\sum_{i=1}^{m}I(X_{i}\geq z)\)</span></p>
-<p>– <span class="math inline">\(specificity(z)=\frac{1}{n}\sum_{j=1}^{n}I(Y_{j}&lt;z)\)</span></p>
+</div>
+<div id="auc-1" class="slide section level2">
+<h2>AUC</h2>
 <blockquote>
 <p>Definition. For <span class="math inline">\(n\times m\)</span> array <span class="math inline">\((X_{i},Y_{j})\)</span>, Mann-Whitney test statistic U is defined as the number of <span class="math inline">\((X_{i},Y_{j})\)</span> pairs where <span class="math inline">\(X_{i}&gt;Y_{j}\)</span>.</p>
 </blockquote>
