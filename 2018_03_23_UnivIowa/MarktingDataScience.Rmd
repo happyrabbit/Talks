@@ -12,7 +12,14 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+## About Me
 
+- Hui Lin, Data Scientist (http://scientistcafe.com)
+- Contact：
+    - Email：longqiman@gmail.com
+    - Twitter：[\@gossip_rabbit](https://twitter.com/gossip_rabbit)
+    - LinkedIn：https://www.linkedin.com/in/hui-lin-81653855/
+    
 ## Outline
 
 - Slides: http://scientistcafe.com/IDS/slides/IntroToDataScience.html
