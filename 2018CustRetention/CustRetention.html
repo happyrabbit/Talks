@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <meta name="author" content="Hui Lin" />
-  <meta name="date" content="2018-02-09" />
+  <meta name="date" content="2018-02-10" />
   <meta name="copyright" content="http://scientistcafe.com" />
   <title>Case Study: Customer Retention</title>
   <style type="text/css">code{white-space: pre;}</style>
@@ -19,7 +19,7 @@
   <p class="author">
 <a href="http://scientistcafe.com">Hui Lin</a>
   </p>
-  <p class="date">2018-02-09</p>
+  <p class="date">2018-02-10</p>
 </div>
 <div id="outline" class="slide section level2">
 <h2>Outline</h2>
@@ -105,7 +105,7 @@
 <p><span class="math display">\[ln\mathcal{L}(\boldsymbol{\beta}|\mathbf{y})=\sum_{i=1}^{n}\left\{ y_{i}ln\frac{1}{1+exp(-\mathbf{x_{i}}^{T}\mathbf{\boldsymbol{\beta}})}+(1-y_{i})ln\left[1-\frac{1}{1+exp(-\mathbf{x_{i}}^{T}\boldsymbol{\beta})}\right]\right\} \]</span></p>
 <p><span class="math display">\[D(\boldsymbol{\beta})\equiv\frac{\partial ln\mathcal{L}(\boldsymbol{\beta}|\mathbf{y})}{\partial\boldsymbol{\beta}}=\sum_{i=1}^{n}\left\{ y_{i}-\frac{1}{exp(-\mathbf{x_{i}}^{T}\boldsymbol{\beta})}\right\} \mathbf{x_{i}}\]</span></p>
 <ul>
-<li>Problems: quasi-complete-separation and significane based variable selection</li>
+<li>Problems: quasi-complete-separation and significance based variable selection</li>
 <li>Solution: add penalty</li>
 </ul>
 </div>

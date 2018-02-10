@@ -79,7 +79,7 @@ $$ln\mathcal{L}(\boldsymbol{\beta}|\mathbf{y})=\sum_{i=1}^{n}\left\{ y_{i}ln\fra
 
 $$D(\boldsymbol{\beta})\equiv\frac{\partial ln\mathcal{L}(\boldsymbol{\beta}|\mathbf{y})}{\partial\boldsymbol{\beta}}=\sum_{i=1}^{n}\left\{ y_{i}-\frac{1}{exp(-\mathbf{x_{i}}^{T}\boldsymbol{\beta})}\right\} \mathbf{x_{i}}$$
 
-- Problems: quasi-complete-separation and significane based variable selection
+- Problems: quasi-complete-separation and significance based variable selection
 - Solution: add penalty
 
 
