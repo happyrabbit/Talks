@@ -30,7 +30,13 @@ knitr::opts_chunk$set(echo = FALSE)
 - Case Study: Group Lasso Logistic Regression for Customer Retention
 - Data Scientist Skill Set & How can you get in?
 
+## 
+
+<img src="images/DataScienceTrend2004.PNG" alt="HTML5 Icon" style="width:900px;height:500px;">
+
 ## What is data science? 
+
+<img src="images/awesome-me.gif" alt="HTML5 Icon" style="width:600px;height:400px;">
 
 ## Predictive Analytics: parametric model and ensemble method
 
