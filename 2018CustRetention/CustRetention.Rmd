@@ -125,32 +125,6 @@ $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g
 
 ## Cut-off Tuning
  
-- If we use binary variable, D, to denote true outcome status: 
-
-$$D=\begin{cases}
-\begin{array}{c}
-1\\
-0
-\end{array} & \begin{array}{c}
-purchase\\
-not-purchase
-\end{array}\end{cases}$$
-
-The variable T is the result of the model.
-
-$$T=\begin{cases}
-\begin{array}{c}
-1\\
-0
-\end{array} & \begin{array}{c}
-predict\ purchase\\
-predict\ not purchase
-\end{array}\end{cases}$$
-
-$$Specificity=true\ negative\ fraction=P[T=0|D=0]$$
-$$Sensitivity=true\ positive\ fraction=P[T=1|D=1]$$
-
->
 1. Ordered the score from high to low
 2. Calculate the sensitivity and specificity as the cutoff changes
 3. Get the cut-off values with corresponding likelihoods
