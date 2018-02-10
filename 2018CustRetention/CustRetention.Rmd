@@ -130,6 +130,10 @@ $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g
 3. Get the cut-off values with corresponding likelihoods
 
 
+## Project Cycle
+
+![](images/GeneralProcessEN.png){width=90%}
+
 ## Model Comparison
 
 - Traditional Stepwise Regression
@@ -138,6 +142,15 @@ $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g
 - Neural Network
 
 > Essentially, all models are wrong, but some are useful.
+
+
+## Project Cycle
+
+![](images/GeneralProcessEN.png){width=90%}
+
+## Data Pipeline
+
+![](images/DataPipeline.png){width=80%}
 
 ## Thank you!
 
