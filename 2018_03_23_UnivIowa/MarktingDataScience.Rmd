@@ -1,12 +1,14 @@
 ---
 title: "Marketing Data Science"
-author: '[Hui Lin](http://scientistcafe.com), DowDuPont'
+author: "[Hui Lin](http://scientistcafe.com), DowDuPont"
 date: "2018/03/23 @ University of Iowa"
 output:
-  slidy_presentation:
-    footer: http://scientistcafe.com
-  ioslides_presentation: default
-  beamer_presentation: default
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
 ---
 
 ```{r setup, include=FALSE}
@@ -20,7 +22,9 @@ knitr::opts_chunk$set(echo = FALSE)
     - Email：longqiman@gmail.com
     - Twitter：[\@gossip_rabbit](https://twitter.com/gossip_rabbit)
     - LinkedIn：https://www.linkedin.com/in/hui-lin-81653855/
-    
+
+---
+
 # Outline
 
 - Slides: http://scientistcafe.com/IDS/slides/IntroToDataScience.html
@@ -31,34 +35,70 @@ knitr::opts_chunk$set(echo = FALSE)
 - Case Study: Group Lasso Logistic Regression for Customer Retention
 - Data Scientist Skill Set & How can you get in?
 
+---
+
+class: inverse, center, middle
+
+# What is data science? 
+
+---
+
 # 
 
 <img src="images/DataScienceTrend2004.PNG" alt="HTML5 Icon" style="width:900px;height:500px;">
+
+---
 
 # What is data science? 
 
 <img src="images/awesome-me.gif" alt="HTML5 Icon" style="width:600px;height:400px;">
 
+---
+
+class: inverse, center, middle
+
 # Predictive Analytics: parametric model and ensemble method
+
+---
+
+class: inverse, center, middle
 
 # Unstructured data analytics: digital marketing
 
+---
+
+class: inverse, center, middle
+
 # Market research analytics
 
+---
+
+class: inverse, center, middle
+
 # Case Study: Group Lasso Logistic Regression for Customer Retention
+
+---
+
+# Case Study
 
 - General context without going into business details
 - Follow the data science project circle
 - Focus on the technical parts
 
+---
+
 # Project Cycle
 
-![](images/GeneralProcessEN.png){width=90%}
+![](images/GeneralProcessEN.png)
+
+---
 
 # Business Questions
 
 1. How likely will a customer purchase?
 2. What are the key drivers?
+
+---
 
 # Clarification Questions
 
@@ -71,16 +111,21 @@ knitr::opts_chunk$set(echo = FALSE)
 - Where are different data sets located?
 - ...
 
+---
+
 # Refined Question
 
 - Response: if a corn multi-year customer will purchase again next year
 
 - Predictors: other customer experience and behavior data
 
+---
 
 # Project Cycle
 
-![](images/GeneralProcessEN.png){width=90%}
+![](images/GeneralProcessEN.png) 
+
+---
 
 # Data Preprocessing
 
@@ -94,9 +139,13 @@ knitr::opts_chunk$set(echo = FALSE)
     - counts
     - $x_{ij}^{*} = \frac{x_{ij} - quantile(x_{.j}, 0.01)}{quantile(x_{.j, 0.99})- quantile(x_{.j}, 0.01)}$
 
+---
+
 # Project Cycle
 
-![](images/GeneralProcessEN.png){width=90%}
+![](images/GeneralProcessEN.png) 
+
+---
 
 # Multivariate logistic regression
 
@@ -113,13 +162,16 @@ $$D(\boldsymbol{\beta})\equiv\frac{\partial ln\mathcal{L}(\boldsymbol{\beta}|\ma
 - Problems: quasi-complete-separation and significance based variable selection
 - Solution: add penalty
 
+---
 
 # Lasso: weighted L1-norm penalty [Tibshirani 1996]
 
 - $\hat{\beta}_{\lambda}=argmin_{\beta}(\parallel\mathbf{Y-X}\beta\parallel_{2}^{2}+\lambda\Sigma_{j=1}^{p}|\beta_{j}|)$
 - Advantage: stabilize the estimation, also a variable selection tool
 - Limitation: only selects individual dummy variables, the estimates are affected by the way dummy variables are encoded (M. Yuan and Y. Lin, Model selection and estimation in regression with grouped variables, J. R. Stat. Soc. Ser. B Stat. Methodol. 68 (2007), pp.49-67)
-    
+
+---
+
 # Group Lasso Logistic Regression
 
 - $\mathbf{x_{i,g}}$ vector of dummy variables ( $i^{th}$ observation in group $g$ ) $i = 1,...,n , g = 1,...,G$
@@ -137,6 +189,7 @@ $$\Sigma_{i=1}^{n}\{y_{i}\eta_{\beta}(\mathbf{x_{i}})-log[1+exp(\eta_{\beta}(\ma
 
 $\lambda$ tuning parameter for penalty and $s(\centerdot)$ is $s(df_{g})=df_{g}^{0.5}$
 
+---
 
 # Performance Measure
 
@@ -147,6 +200,8 @@ where
 
 $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g}^{T}(y-\bar{y})}\parallel_{2}}$$
 
+---
+
 # Model Training and Testing
 
 
@@ -154,16 +209,21 @@ $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g
 - 10-fold cross validation (Train)
 - Double check: one year holdout
 
+---
+
 # Cut-off Tuning
  
 1. Ordered the score from high to low
 2. Calculate the sensitivity and specificity as the cutoff changes
 3. Get the cut-off values with corresponding likelihoods
 
+---
 
 # Project Cycle
 
-![](images/GeneralProcessEN.png){width=90%}
+![](images/GeneralProcessEN.png) 
+
+---
 
 # Model Comparison
 
@@ -174,10 +234,12 @@ $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g
 
 > Essentially, all models are wrong, but some are useful.
 
+---
 
 # Project Cycle
 
-![](images/GeneralProcessEN.png){width=90%}
+![](images/GeneralProcessEN.png)
 
+---
 
 # Be a data scientist!
