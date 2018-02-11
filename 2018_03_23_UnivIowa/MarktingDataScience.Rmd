@@ -12,6 +12,7 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
 # About Me
 
 - Hui Lin, Data Scientist (http://scientistcafe.com)
