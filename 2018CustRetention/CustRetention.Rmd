@@ -16,8 +16,8 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Outline
 
 - General context without going into business details
-- Follow the data science project circle
 - Focus on the technical parts
+- Follow the data science project Cycle
 
 ## Project Cycle
 
