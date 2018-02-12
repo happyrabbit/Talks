@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - General context without going into business details
 - Focus on the technical parts
-- Follow the data science project Cycle
+- Follow the data science project cycle
 
 ## Project Cycle
 
@@ -87,7 +87,7 @@ $$D(\boldsymbol{\beta})\equiv\frac{\partial ln\mathcal{L}(\boldsymbol{\beta}|\ma
 
 - $\hat{\beta}_{\lambda}=argmin_{\beta}(\parallel\mathbf{Y-X}\beta\parallel_{2}^{2}+\lambda\Sigma_{j=1}^{p}|\beta_{j}|)$
 - Advantage: stabilize the estimation, also a variable selection tool
-- Limitation: only selects individual dummy variables, the estimates are affected by the way dummy variables are encoded (M. Yuan and Y. Lin, Model selection and estimation in regression with grouped variables, J. R. Stat. Soc. Ser. B Stat. Methodol. 68 (2007), pp.49-67)
+- Limitation: only selects individual variables, the estimates are affected by the way dummy variables are encoded (M. Yuan and Y. Lin, Model selection and estimation in regression with grouped variables, J. R. Stat. Soc. Ser. B Stat. Methodol. 68 (2007), pp.49-67)
     
 ## Group Lasso Logistic Regression
 
