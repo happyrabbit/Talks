@@ -84,28 +84,30 @@ class: inverse, center, middle
 
 ---
 
-# Case Study
+## Case Study
 
 - General context without going into business details
-- Follow the data science project circle
+
 - Focus on the technical parts
+
+- Follow the data science project cycle
 
 ---
 
-# Project Cycle
+## Project Cycle
 
 ![](images/GeneralProcessEN.png)
 
 ---
 
-# Business Questions
+## Business Questions
 
 1. How likely will a customer purchase?
 2. What are the key drivers?
 
 ---
 
-# Clarification Questions
+## Clarification Questions
 
 - Who are our customers?
 - Are there different segments of customers?
@@ -118,7 +120,7 @@ class: inverse, center, middle
 
 ---
 
-# Refined Question
+## Refined Question
 
 - Response: if a corn multi-year customer will purchase again next year
 
@@ -126,13 +128,13 @@ class: inverse, center, middle
 
 ---
 
-# Project Cycle
+## Project Cycle
 
 ![](images/GeneralProcessEN.png) 
 
 ---
 
-# Data Preprocessing
+## Data Preprocessing
 
 - Cleaning
 - Missing values
@@ -146,13 +148,13 @@ class: inverse, center, middle
 
 ---
 
-# Project Cycle
+## Project Cycle
 
 ![](images/GeneralProcessEN.png) 
 
 ---
 
-# Multivariate logistic regression
+## Multivariate logistic regression
 
 - `\(\mathbf{y}=(y_{1},y_{2},\dots,y_{n})^{T}\)`  binary response vector
 - `\(X=(\mathbf{x_{1}},\mathbf{x_{2}},\dots,\mathbf{x_{n}})^{T}\)` design matrix in which each `\(\mathbf{x_{i}}\)` is `\(p+1\)` dimention column 
@@ -169,7 +171,7 @@ $$ln\mathcal{L}(\boldsymbol{\beta}|\mathbf{y})=\sum_{i=1}^{n}\left\{ y_{i}ln\fra
 
 ---
 
-# Lasso: weighted L1-norm penalty [Tibshirani 1996]
+## Lasso: weighted L1-norm penalty [Tibshirani 1996]
 
 - `\(\hat{\beta}_{\lambda}=argmin_{\beta}(\parallel\mathbf{Y-X}\beta\parallel_{2}^{2}+\lambda\Sigma_{j=1}^{p}|\beta_{j}|)\)`
 - Advantage: stabilize the estimation, also a variable selection tool
@@ -177,7 +179,7 @@ $$ln\mathcal{L}(\boldsymbol{\beta}|\mathbf{y})=\sum_{i=1}^{n}\left\{ y_{i}ln\fra
 
 ---
 
-# Group Lasso Logistic Regression
+## Group Lasso Logistic Regression
 
 - `\(\mathbf{x_{i,g}}\)` vector of dummy variables ( `\(i^{th}\)` observation in group `\(g\)` ) `\(i = 1,...,n , g = 1,...,G\)`
 
@@ -196,7 +198,7 @@ where `\(l(\mathbf{\beta})\)` is log-likelihood:
 
 ---
 
-# Performance Measure
+## Performance Measure
 
 - Maximize AUC
 - Grid of 148 values `$${0.96\lambda_{max},0.96^{2}\lambda_{max},\dots,0.96^{148}\lambda_{max}}$$` 
@@ -207,7 +209,7 @@ where
 
 ---
 
-# Model Training and Testing
+## Model Training and Testing
 
 
 - 70/30 (Train/Test)
@@ -216,7 +218,7 @@ where
 
 ---
 
-# Cut-off Tuning
+## Cut-off Tuning
  
 1. Ordered the score from high to low
 2. Calculate the sensitivity and specificity as the cutoff changes
@@ -224,13 +226,13 @@ where
 
 ---
 
-# Project Cycle
+## Project Cycle
 
 ![](images/GeneralProcessEN.png) 
 
 ---
 
-# Model Comparison
+## Model Comparison
 
 - Traditional Stepwise Regression
 - Random Forest
@@ -241,7 +243,7 @@ where
 
 ---
 
-# Project Cycle
+## Project Cycle
 
 ![](images/GeneralProcessEN.png)
 
