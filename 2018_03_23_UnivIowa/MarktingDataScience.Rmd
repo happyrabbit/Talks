@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = FALSE)
 - Hui Lin, Data Scientist (http://scientistcafe.com)
 - Contact：
     - Email：longqiman@gmail.com
-    - Twitter：[\@gossip_rabbit](https://twitter.com/gossip_rabbit)
+    - Twitter：[@gossip_rabbit](https://twitter.com/gossip_rabbit)
     - LinkedIn：https://www.linkedin.com/in/hui-lin-81653855/
 
 ---
@@ -61,16 +61,57 @@ class: inverse, center, middle
 
 ---
 
+## Predictability v.s. Interpretability
+
+---
+
+## Systematic Error and Random Error
+
+---
+
+class: inverse, center, middle
+
+# Program and Service Analysis
+
+---
+
+## Causal inference in observational environment
+
+---
 class: inverse, center, middle
 
 # Unstructured data analytics: digital marketing
 
 ---
 
+## Social media analysis: where to get the data?
+
+---
+
+## How does computer understand the language?
+
+---
+
+## Example of a Marketing Campaign
+    
+---
+
 class: inverse, center, middle
 
 # Market research analytics
 
+---
+
+## NLP: Open-end survey questions
+
+---
+
+## Choice-based conjoint analysis
+
+---
+
+## Customer perception analysis 
+    
 ---
 
 class: inverse, center, middle
@@ -243,5 +284,6 @@ $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g
 ![](images/GeneralProcessEN.png)
 
 ---
+class: inverse, center, middle
 
 # Be a data scientist!
