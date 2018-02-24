@@ -43,15 +43,82 @@ class: inverse, center, middle
 
 ---
 
-# 
+## 
 
 <img src="images/DataScienceTrend2004.PNG" alt="HTML5 Icon" style="width:900px;height:500px;">
 
 ---
 
-# What is data science? 
+## What is data science? 
 
 <img src="images/awesome-me.gif" alt="HTML5 Icon" style="width:600px;height:400px;">
+
+---
+
+## Brief History
+
+<center>
+![](http://scientistcafe.com/book/Figure/DataScienceTimeline.png){width=90%}
+</center>
+
+---
+
+## What questions can data science answer? 
+
+- Specific
+    1. How can we increase sales?
+    1. Does the January campaign on product X increase the amount of purchase from our 2017 retained customers? 
+
+- Data
+    1. Representative
+    1. Relevant
+    1. Quality
+    
+---
+
+## Types of Questions
+
+<center>
+![](http://scientistcafe.com/book/Figure/DataScienceQuestion.png){height=55%}
+</center>
+
+---
+
+## Types of Learning
+
+<center>
+![](http://scientistcafe.com/book/Figure/LearningStyles.png){height=100%}
+</center>
+
+---
+
+## Types of Algorithm (1) 
+
+- http://scientistcafe.com/2017/07/08/MachineLearningAl.html
+
+<center>
+![](images/AlogrithmTypes1.png){height=100%}
+</center>
+
+---
+
+## Types of Algorithm (2)
+
+- http://scientistcafe.com/2017/07/08/MachineLearningAl.html
+
+<center>
+![](images/AlogrithmTypes2.png){height=100%}
+</center>
+
+---
+
+## Types of Algorithm (3)
+
+- http://scientistcafe.com/2017/07/08/MachineLearningAl.html
+
+<center>
+![](images/AlogrithmTypes3.png){height=100%}
+</center>
 
 ---
 
@@ -84,7 +151,12 @@ class: inverse, center, middle
 
 ---
 
-## Social media analysis: where to get the data?
+## Where to get the data?
+
+- API: Twitter/Google/Wikipedia...
+- Webpage: Forum, Reviews
+- Survey
+- Interviews
 
 ---
 
@@ -99,10 +171,6 @@ class: inverse, center, middle
 class: inverse, center, middle
 
 # Market research analytics
-
----
-
-## NLP: Open-end survey questions
 
 ---
 
@@ -287,3 +355,27 @@ $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g
 class: inverse, center, middle
 
 # Be a data scientist!
+
+---
+
+## Data Scientist Skill Set
+
+![](http://scientistcafe.com/book/Figure/SkillEN.png){width=100%}
+
+---
+
+## Some links
+
+- [Types of Machine Learning Algorithm](http://scientistcafe.com/2017/07/08/MachineLearningAl.html)
+
+- Online books:
+    - [The Elements of Statistical Learning](http://web.stanford.edu/~hastie/ElemStatLearn/)
+    - [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/)
+    - [Introduction to Data Science](http://scientistcafe.com/IDS/)(still writing)
+
+- Hard copy books:
+    - [Applied Predictive Modeling](http://appliedpredictivemodeling.com)
+    - [R for Marketing Research and Analytics](http://r-marketing.r-forge.r-project.org)
+    - [套路！机器学习](http://scientistcafe.com/book/)
+
+- [Awesome-Data-Science-Materials](https://github.com/happyrabbit/Awesome-Data-Science-Materials)
