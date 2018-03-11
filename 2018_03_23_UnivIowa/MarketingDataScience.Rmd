@@ -21,7 +21,6 @@ knitr::opts_chunk$set(echo = FALSE)
     - Github: https://github.com/happyrabbit
 - Slides: http://scientistcafe.com/IDS/slides/MarketingDataScience.html
 
-
 # Outline
 
 - What is Data Science? 
@@ -218,10 +217,6 @@ $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g
 
 ![](images/GeneralProcessEN.png)
 
-# Data Science Pipeline
-
-![](images/DataPipeline.png) 
-
 # Data Science in Marketing Overview
 
 - Program and Service Analysis
@@ -237,7 +232,10 @@ $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g
     - Choice-based conjoint analysis
     - Customer perception analysis 
     
-    
+# Data Science Pipeline
+
+![](images/DataPipeline.png) 
+
 # Data Scientist Skill Set
 
 ![](http://scientistcafe.com/book/Figure/SkillEN.png){width=100%}
