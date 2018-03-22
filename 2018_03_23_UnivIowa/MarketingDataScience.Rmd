@@ -35,7 +35,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # What is Data Science? 
 
-<img src="images/DataScienceTrend2004.PNG" alt="HTML5 Icon" style="width:900px;height:500px;">
+<center>
+![](images/DataScienceTrend2004.PNG){width=100%}
+</center>
 
 
 # Sexist or Worst Defined Job 
@@ -233,6 +235,7 @@ $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g
     - Interviews
     
 - Market research analytics
+    - Customer Segmentation
     - Choice-based conjoint analysis
     - Customer perception analysis 
     
