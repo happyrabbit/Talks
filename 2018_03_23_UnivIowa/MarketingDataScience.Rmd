@@ -54,7 +54,7 @@ knitr::opts_chunk$set(echo = FALSE)
 # Types of Learning
 
 <center>
-![](http://scientistcafe.com/book/Figure/LearningStyles.png){height=100%}
+![](images/LearningStyles.png){height=100%}
 </center>
 
 
@@ -226,18 +226,22 @@ $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g
 
 - Program and Service Analysis
     - Causal inference in observational environment
-    
 - [Unstructured data analytics](http://hui1987.com/Presentations/UnlockUnstrDataMkt.html#(17)): digital marketing
     - API: Twitter/Google/Wikipedia...
     - Webpage: Forum, Reviews
     - Survey
     - Interviews
-    
 - Market research analytics
     - Customer Segmentation
     - Choice-based conjoint analysis
     - Customer perception analysis 
-    
+- Market Basket Analysis
+- ...
+
+# Conjoint analysis
+
+![](images/choice.png){width=80%}
+
 # Data Science Pipeline
 
 ![](images/DataPipeline.png) 
@@ -260,4 +264,7 @@ $$\lambda_{max}=max_{g\in {1,\dots,G}}{\frac{1}{s(df_{g})}\parallel \mathbf{x_{g
     - [Applied Predictive Modeling](http://appliedpredictivemodeling.com)
     - [R for Marketing Research and Analytics](http://r-marketing.r-forge.r-project.org)
 
+- Online course:
+    - [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
+    
 - [Awesome-Data-Science-Materials](https://github.com/happyrabbit/Awesome-Data-Science-Materials)
