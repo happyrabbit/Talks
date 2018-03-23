@@ -23,6 +23,7 @@ knitr::opts_chunk$set(echo = FALSE)
 -->
 
 - Slides: http://scientistcafe.com/IDS/slides/MarketingDataScience.html
+- Github repo: https://github.com/happyrabbit/Talks/tree/master/2018_03_23_UnivIowa
 
 # Outline
 
