@@ -22,7 +22,6 @@ knitr::opts_chunk$set(echo = FALSE)
     - LinkedIn: https://www.linkedin.com/in/hui-lin-81653855/
 -->
 
-    
 - Slides: http://scientistcafe.com/IDS/slides/MarketingDataScience.html
 
 # Outline
