@@ -1,7 +1,7 @@
 ---
 title: "Data Wrangling"
-author: "Ming Li, Amazon </br> [Hui Lin](http://scientistcafe.com), DuPont"
-date: "July 30, 2017 @ JSM2017"
+author: '[Hui Lin](http://scientistcafe.com), @Netlify'
+date: "`r Sys.Date()`"
 output: 
   slidy_presentation: 
     footer: "http://scientistcafe.com"
