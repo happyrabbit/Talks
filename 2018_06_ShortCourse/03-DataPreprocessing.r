@@ -4,7 +4,8 @@
 ### http://scientistcafe.com
 ### -----------------------------
 
-
+## Data Cleaning
+## Do you see any problems?
 sim.dat <- read.csv("https://raw.githubusercontent.com/happyrabbit/DataScientistR/master/Data/SegData.csv ")
 summary(sim.dat)
 
