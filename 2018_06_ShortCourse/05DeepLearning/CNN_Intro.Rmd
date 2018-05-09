@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Neural Network Basic
 
 | Input (x) | Output (y) | Application |
-| -----------|:-----------|:---------- |
+| :---: |  :---:  |  :---: |
 | Home features | Price | Real Estate |
 | Ad, user info | Click on an Ad? (0/1) | Online Advertising |
 | **Image** | **Object (1, ..., 10)** | **Photo tagging** |
@@ -22,6 +22,12 @@ knitr::opts_chunk$set(echo = FALSE)
 | Audio | Text transcript | Speech recognition |
 | English | Chinese | Machine translation |
 | Voice | Voice | Human computer conversation |
+
+## Neural Network Example
+
+<center>
+![](images/NN_EXP.png){width=80%}
+</center>
 
 ## Estimation
 
