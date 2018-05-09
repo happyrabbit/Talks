@@ -13,6 +13,22 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Neural Network Basic
 
+| Input (x) | Output (y) | Application |
+| -----------|:-----------|:---------- |
+| Home features | Price | Real Estate |
+| Ad, user info | Click on an Ad? (0/1) | Online Advertising |
+| **Image** | **Object (1, ..., 10)** | **Photo tagging** |
+| **Image, Radar info** | **Position of other cars** | **Autonomous driving** |
+| Audio | Text transcript | Speech recognition |
+| English | Chinese | Machine translation |
+| Voice | Voice | Human computer conversation |
+
+## Estimation
+
+<center>
+<img src="images/sgd.gif" alt="HTML5 Icon" style="width:500px;height:400px;">
+</center>
+
 ## Image Data
 
 ## Computer vision
@@ -48,6 +64,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ![](images/verticaledge.png){width=60%}
 
+## Parameters
+
+![](images/cnn_parameters.png){width=60%}
 
 ## Padding
 
@@ -61,8 +80,3 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Pooling Layers
 
-## Estimation
-
-<center>
-<img src="images/sgd.gif" alt="HTML5 Icon" style="width:500px;height:400px;">
-</center>
