@@ -29,6 +29,8 @@ knitr::opts_chunk$set(echo = FALSE)
 ![](images/NN_EXP.png){width=80%}
 </center>
 
+
+
 ## Estimation
 
 <center>
@@ -36,6 +38,8 @@ knitr::opts_chunk$set(echo = FALSE)
 </center>
 
 ## Image Data
+
+![](images/image_data.png){width=80%}
 
 ## Computer vision
 
