@@ -16,7 +16,7 @@ This is an enhanced version of a similar highly-rated and full-day training cour
 Tentative Schedule
 
 | Topic | Time |
-| --- | ---|
+| :---: | :---: |
 | Introduction |  15 min |
 | Deep Learning Lecture | 15 min + 45 min + 45 min|
 | Break | 15 min |
@@ -25,8 +25,8 @@ Tentative Schedule
 | Deep Learning Hands on Session | 60 min |
 | Lunch break |  |
 | Build static personal website using SSG+Netlify | 15 min |
-| Data Preprocessing & Wrangling | 30 min |
-| Big Data Cloud Platform Lecture | 45 min |
+| Data Preprocessing & Wrangling | 45 min |
 | Break | 15 min |
+| Big Data Cloud Platform Lecture | 45 min |
 | Big Data Cloud Platform Hands on | 60 min |
-| Soft Skill and Project Cycle | 45 min |
+| Soft Skill and Project Cycle | 20 min |
