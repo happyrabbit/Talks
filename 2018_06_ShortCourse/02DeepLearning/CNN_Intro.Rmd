@@ -88,9 +88,32 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Summary of Convolutions
 
+- $n \times n$ image; $f \times f$ filter 
+- padding $p$;  stride $s$ 
+- Output: $\left[ \frac{n+2p-f}{s}+1 \right] \times \left[ \frac{n+2p-f}{s} +1 \right]$
+
 ## Convolutions Over Volume
 
-## One Layer of a Convolutional Network
+![](images/ConvOverVolume.png){width=60%}
+
+## Your Turn: Number of Parameters in One Layer
+
+If you have 10 filters that are $3 \times 3 \times 3$ in one layer of a neural network, how many parameters does that layer have?
+
+## Summary of Notation
+
+- If layer $l$ is a convolution layer:
+
+- $f^{[l]}$ = filter size
+- $p^{[l]}$ = padding
+- $f^{[l]}$ = stride
+- $n^{[l]}_C$ = number of filters
+- Each filter: $f^{[l]} \times f^{[l]} \times n^{[l-1]}_C$
+- Activations: $a^{[l]} \rightarrow n_H^{[l]} \times n_W^{[l]} \times n_C^{[l]}$
+- Weights: $f^{[l]} \times f^{[l]} \times  n^{[l-1]}_C \times  n^{[l]}_C $
+- bias: $ n^{[l]}_C$
+- Input:  $n^{[l-1]}_H \times  n^{[l-1]}_W \times  n^{[l-1]}_C$
+- Output: $n^{[l]}_H \times  n^{[l]}_W \times  n^{[l]}_C$
 
 ## Pooling Layers
 
