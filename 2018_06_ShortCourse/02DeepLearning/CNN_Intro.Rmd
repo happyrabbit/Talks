@@ -94,11 +94,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Convolutions Over Volume
 
-![](images/ConvOverVolume.png){width=60%}
+![](images/ConvOverVolume.png){width=100%}
 
 # Your Turn: Number of Parameters in One Layer
 
-If you have 10 filters that are $3 \times 3 \times 3$ in one layer of a neural network, how many parameters does that layer have?
+> Question: If you have 10 filters that are $3 \times 3 \times 3$ in one layer of a neural network, how many parameters does that layer have?
 
 # Summary of Notation
 
@@ -110,11 +110,38 @@ If layer $l$ is a convolution layer:
 - $n^{[l]}_C$ = number of filters
 - Each filter: $f^{[l]} \times f^{[l]} \times n^{[l-1]}_C$
 - Activations: $a^{[l]} \rightarrow n_H^{[l]} \times n_W^{[l]} \times n_C^{[l]}$
-- Weights: $f^{[l]} \times f^{[l]} \times  n^{[l-1]}_C \times  n^{[l]}_C $
-- bias: $ n^{[l]}_C$
+- Weights: $f^{[l]} \times f^{[l]} \times  n^{[l-1]}_C \times  n^{[l]}_C$
+- bias: $n^{[l]}_C$
 - Input:  $n^{[l-1]}_H \times  n^{[l-1]}_W \times  n^{[l-1]}_C$
 - Output: $n^{[l]}_H \times  n^{[l]}_W \times  n^{[l]}_C$
 - $n^{[l]}_H = \frac{n^{[l-1]}_W + 2p^{[l]}-f^{[l]}}{s^{[l]}}+1$ (similar for $W$)
 
 # Pooling Layers
+
+
+
+# Examples: LeNet - 5
+
+![LeCun et al., 1998. Gradient-based learning applied to document recognition](images/LeNet5.png){width=90%}
+
+# Examples: LeNet - 5
+
+|  | Activation Shape |   Activation Size | # Parameters |
+|:---:|:---:|:---:|:---:|
+| Input | (32, 32, 1) | 1024 | 0|
+| CONV1 (f=5, s=1) | (28, 28, 6) | 6272 | $5 \times 5 \times 6 + 6 = 156$ |
+| POOL1 (f=2, s=2) | (14, 14, 6) | 1176 | 0 |
+| CONV2 (f=5, s=1) | (10, 10, 16) | 1600 | $5 \times 5 \times 16 + 16 = 416$ |
+| POOL2 (f=2, s=2) | (5, 5, 16) | 1176 | 0 |
+| FC3 | (120, 1) | 120 | $400 \times 120 + 1 = 48001$ |
+| FC4 | (84, 1) | 84 | $120 \times 84 + 1 = 10081$ |
+| Softmax | (10, 1) | 10 | $84 \times 10 +1 = 841$ |
+
+# Types of Layer in A Convolutional Network
+
+- Convolution
+
+- Pooling
+
+- Fully connected
 
