@@ -11,7 +11,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Neural Network Basic
+# Neural Network Basic
 
 | Input (x) | Output (y) | Application |
 | :---: |  :---:  |  :---: |
@@ -23,61 +23,61 @@ knitr::opts_chunk$set(echo = FALSE)
 | English | Chinese | Machine translation |
 | Voice | Voice | Human computer conversation |
 
-## Neural Network Example
+# Neural Network Example
 
 <center>
 ![](images/NN_EXP.png){width=80%}
 </center>
 
-## Computer vision
+# Computer Vision
 
 - Image Classification
 
 ![](images/SIGNS.png){width=60%}
 
 
-## Computer vision
+# Computer Vision
 
 - Object Detection
 
 ![](images/objectdetection.png){width=60%}
 
-## Computer Vision
+# Computer Vision
 
 - Neural Style Transfer
 
 ![](images/styletransfer.PNG){width=60%}
 
 
-## Image Data
+# Image Data
 
 ![](images/image_data.png){width=80%}
 
-## Convolutions Schematic
+# Convolutions Schematic
 
 <center>
 <img src="images/Convolution_schematic.gif" alt="HTML5 Icon" style="width:600px;height:400px;">
 </center>
 
-## Edge Detection
+# Edge Detection
 
 ![](images/edge.png){width=60%}
 
-## Vertical Edge Detection
+# Vertical Edge Detection
 
 ![](images/verticaledge.png){width=60%}
 
-## Parameters
+# Parameters
 
 ![](images/cnn_parameters.png){width=60%}
 
-## Padding
+# Padding
 
 - Pad so that output size is the same as the input size.
 
 ![](images/padding.png){width=60%}
 
-## Strided convolutions
+# Strided convolutions
 
 - $n\times n$ ($n=7$) 
 - $f \times f$ ($f=3$)
@@ -86,23 +86,23 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ![](images/Strided.png){width=60%}
 
-## Summary of Convolutions
+# Summary of Convolutions
 
 - $n \times n$ image; $f \times f$ filter 
 - padding $p$;  stride $s$ 
 - Output: $\left[ \frac{n+2p-f}{s}+1 \right] \times \left[ \frac{n+2p-f}{s} +1 \right]$
 
-## Convolutions Over Volume
+# Convolutions Over Volume
 
 ![](images/ConvOverVolume.png){width=60%}
 
-## Your Turn: Number of Parameters in One Layer
+# Your Turn: Number of Parameters in One Layer
 
 If you have 10 filters that are $3 \times 3 \times 3$ in one layer of a neural network, how many parameters does that layer have?
 
-## Summary of Notation
+# Summary of Notation
 
-- If layer $l$ is a convolution layer:
+If layer $l$ is a convolution layer:
 
 - $f^{[l]}$ = filter size
 - $p^{[l]}$ = padding
@@ -114,6 +114,7 @@ If you have 10 filters that are $3 \times 3 \times 3$ in one layer of a neural n
 - bias: $ n^{[l]}_C$
 - Input:  $n^{[l-1]}_H \times  n^{[l-1]}_W \times  n^{[l-1]}_C$
 - Output: $n^{[l]}_H \times  n^{[l]}_W \times  n^{[l]}_C$
+- $n^{[l]}_H = \frac{n^{[l-1]}_W + 2p^{[l]}-f^{[l]}}{s^{[l]}}+1$ (similar for $W$)
 
-## Pooling Layers
+# Pooling Layers
 
