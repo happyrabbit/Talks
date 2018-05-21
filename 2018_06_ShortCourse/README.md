@@ -9,6 +9,24 @@ This is an enhanced version of a similar highly-rated and full-day training cour
 
 3. Data Science Project Cycle. In this section, we will leverage the Databricks platforms Spark capability with R to go through some important topics in the data science cycle. The platform provides a production-like environment at enterprises. Participants will be able to use R to leverage Spark to do those data manipulation after this section.
 
-4. Survey of Typical Machine Learning Algorithms. In this section, we will leverage the Databricks platform to explore typical machine learning algorithms typically used in industries with hands-on examples. Participants will learn how to apply these algorithms in real world prob- lems through big data platform after this section.
+4. Survey of Typical Machine Learning Algorithms. In this section, we will leverage the Databricks platform to explore typical machine learning algorithms typically used in industries with hands-on examples. Participants will learn how to apply these algorithms in real world problems through big data platform after this section.
 
 5. Soft Skills for Data Scientists. In this section, we will introduce the needed soft skills that are essential in data science projects at enterprise environments. We will talk about basic project management skills with agile concepts and how to effectively communicate with business partners to define and solve data science problems. We will illustrate how to lead with confidence given the strong technical background that statisticians have. Participants will be familiar with data science collaborations in enterprise environments after this section.
+
+Tentative Schedule
+
+| Topic | Time |
+| --- | ---|
+| Introduction |  15 min |
+| Deep Learning Lecture | 15 min + 45 min + 45 min|
+| Break | 15 min |
+| Data Prepressing Using R Pipe Line | 15 min |
+| Databricks account setup | 30 min |
+| Deep Learning Hands on Session | 60 min |
+| Lunch break |  |
+| Build static personal website using SSG+Netlify | 15 min |
+| Data Preprocessing & Wrangling | 30 min |
+| Big Data Cloud Platform Lecture | 45 min |
+| Break | 15 min |
+| Big Data Cloud Platform Hands on | 60 min |
+| Soft Skill and Project Cycle | 45 min |
