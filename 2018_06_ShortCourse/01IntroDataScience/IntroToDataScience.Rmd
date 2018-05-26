@@ -13,64 +13,33 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Outline
+## Schedule
 
-- Slides: http://scientistcafe.com/IDS/slides/IntroToDataScience.html
-- What is data science? Some definitions
-- Brief history
-- What questions can data science answer? 
-- Types of Learning
-- Types of Algorithm
-- Data Scientist Skill Set
-- Data Science Pipeline
+| Topic | Time |
+| :--- | :--- |
+| Introduction |  15 min |
+| Deep Learning Lecture | 15 min + 45 min + 45 min|
+| Break | 15 min |
+| Data Prepressing Using R Pipe Line | 10 min |
+| Databricks account setup | 30 min |
+| Deep Learning Hands on Session | 60 min |
+| Lunch break |  |
+| Data Preprocessing & Wrangling | 45 min |
+| Big Data Cloud Platform Lecture | 45 min |
+| Break | 15 min |
+| Big Data Cloud Platform Hands on | 60 min |
+| Build static personal website using SSG+Netlify | 15 min |
+| Soft Skill and Project Cycle | 20 min |
 
-## 
-
-<img src="images/DataScienceTrend2004.PNG" alt="HTML5 Icon" style="width:900px;height:500px;">
 
 ## What is data science?
 
 <img src="images/awesome-me.gif" alt="HTML5 Icon" style="width:600px;height:400px;">
 
-## What is data science?
+## 
 
-- Does big data matter?
-- Back to 1962, John Tukey wrote in “The Future of Data Analysis”:
+<img src="images/DataScienceTrend2004.PNG" alt="HTML5 Icon" style="width:900px;height:500px;">
 
-> For a long time I have thought I was a statistician, interested in inferences from the particular to the general. But as I have watched mathematical statistics evolve, I have had cause to wonder and to doubt. … All in all, I have come to feel that my central interest is in data analysis, which I take to include, among other things: procedures for analyzing data, techniques for interpreting the results of such procedures, ways of planning the gathering of data to make its analysis easier, more precise or more accurate, and all the machinery and results of (mathematical) statistics which apply to analyzing data.
-
-## What is data science?
-
-- The website for DSI gives us an idea what Data Science is:
-
-> “This coupling of scientific discovery and practice involves the collection, management, processing, analysis, visualization, and interpretation of vast amounts of heterogeneous data associated with a diverse array of scientific, translational, and interdisciplinary applications.”
-
-## What is a data scientist?
-
-```{r, out.width = "850px",out.height = "400px"}
-knitr::include_graphics("images/datascientist.png")
-```
-
-## What is a data scientist?
-
-Here is a list of definitions for a “data scientist”:
-
-- “A data scientist is a data analyst who lives in California”
-- “A data scientist is someone who is better at statistics than any software engineer and better - at software engineering than any statistician.”
-- “A data scientist is a statistician who lives in San Francisco.”
-- “Data Science is statistics on a Mac.”
-
-## %&^%$*(^).....
-
-- You know it when you see it.
-
-![](/Users/happyrabbit/Dropbox/gif/panada.gif){width=40%}
-
-## Brief History
-
-<center>
-![](http://scientistcafe.com/book/Figure/DataScienceTimeline.png){width=90%}
-</center>
 
 ## Driving Forces
 
@@ -105,30 +74,55 @@ Here is a list of definitions for a “data scientist”:
 ![](http://scientistcafe.com/book/Figure/LearningStyles.png){height=100%}
 </center>
 
-## Types of Algorithm (1) 
-
-- http://scientistcafe.com/2017/07/08/MachineLearningAl.html
-
-<center>
-![](images/AlogrithmTypes1.png){height=100%}
-</center>
+## Types of Algorithm (1)
 
 
+- Regression
+    - Ordinary Least Squares
+    - Logistic Regression
+    - Multivariate Adaptive Regression Splines (MARS)
+    
+- Instance-based Methods
+    - k-Nearest Neighbour (kNN)
+    
+- Regularization Methods
+    - Ridge Regression
+    - LASSO
+    - Elastic Net
+    
+- Decision Tree
+    - Classification and Regression Tree (CART)
+    - Bootstrapped Aggregation (Bagging)
+    - Random Forest
+    - Gradient Boosting Machines (GBM)
+    
 ## Types of Algorithm (2)
 
-- http://scientistcafe.com/2017/07/08/MachineLearningAl.html
-
-<center>
-![](images/AlogrithmTypes2.png){height=100%}
-</center>
-
+- Bayesian
+    - Naive Bayes
+    - Bayesian Belief Network (BBN)
+    
+- Kernel Methods
+    - Support Vector Machines (SVM)
+    - Linear Discriminate Analysis (LDA)
+    
+- Association Rule Learning
+    - Apriori algorithm
+    - Eclat algorithm
+    
 ## Types of Algorithm (3)
 
-- http://scientistcafe.com/2017/07/08/MachineLearningAl.html
 
-<center>
-![](images/AlogrithmTypes3.png){height=100%}
-</center>
+- Neural Network and Deep Learning
+    - Feed Forward Neural Network (FFNN)
+    - Convolutional Neural Network (CNN)
+    - Recurrent Neural Network (RNN)
+    
+- Dimensionality Reduction
+    - Principal Component Analysis (PCA)
+    - Partial Least Squares Regression (PLS)
+    - Multidimensional Scaling (MDS)
+
 
 ## Data Scientist Skill Set
 
@@ -142,7 +136,7 @@ Here is a list of definitions for a “data scientist”:
 
 ## Automatic Data Science Pipeline
 
-![](http://scientistcafe.com/book/Figure/AutomaticDataPipeline.png){width=100%}
+![](http://scientistcafe.com/book/Figure/DataPipeline.png){width=100%}
 
 ## Some links
 
@@ -156,6 +150,5 @@ Here is a list of definitions for a “data scientist”:
 - Hard copy books:
     - [Applied Predictive Modeling](http://appliedpredictivemodeling.com)
     - [R for Marketing Research and Analytics](http://r-marketing.r-forge.r-project.org)
-    - [套路！机器学习](http://scientistcafe.com/book/)
-
+ 
 - [Awesome-Data-Science-Materials](https://github.com/happyrabbit/Awesome-Data-Science-Materials)
