@@ -8,9 +8,11 @@ output: slidy_presentation
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
-## Data can be dirty and usually is
+## Data can be dirty and usually is!
 
+<center>
 ![](http://scientistcafe.com/images/dataclean.png){width=50%}
+</center>
 
 
 ## Data types
@@ -149,10 +151,6 @@ Use `predict()` to get the transformed result:
 transformed<-predict(trans,dat_bc)
 ```
 
-## Your Turn
-
-- Check before and after transformation
-
 ## Resolve Outliers
 
 - Defining outliers is hard
@@ -173,16 +171,6 @@ $$M_{i}=\frac{0.6745(Y_{i}-\bar{Y})}{MAD}$$
 where MAD is the median of a series of $|Y_{i} - \bar{Y}|$, called the median of the absolute dispersion
 
 - Iglewicz and Hoaglin suggest that the points with the Z-score greater than 3.5 are possible outliers
-
-## Spatial Sign Transformation
-
-$$x_{ij}^{*}=\frac{x_{ij}}{\sqrt{\sum_{j=1}^{p}x_{ij}^{2}}}$$
-
-1.  It is important to center and scale the predictor data before using this transformation
-1.  Unlike centering or scaling, this manipulation of the predictors transforms them as a group
-1.  If there are some variables to remove (for example, highly correlated variables), do it before the transformation
-
-- Function `spatialSign()` in `caret` package can conduct the transformation
 
 ## Collinearity
 

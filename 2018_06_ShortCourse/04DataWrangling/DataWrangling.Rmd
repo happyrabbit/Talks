@@ -17,6 +17,7 @@ knitr::opts_chunk$set(echo = FALSE)
     - `apply()`, `lapply()` and `sapply()` in base R
     - `ddply()` in `plyr` package
     - **`dplyr` package**
+    
 - Tidy and Reshape Data
     - `reshape2` package
     - `tidyr` package

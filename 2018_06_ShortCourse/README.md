@@ -20,13 +20,13 @@ Tentative Schedule
 | Introduction |  15 min |
 | Deep Learning Lecture | 15 min + 45 min + 45 min|
 | Break | 15 min |
-| Data Prepressing Using R Pipe Line | 15 min |
+| Data Prepressing Using R Pipe Line | 10 min |
 | Databricks account setup | 30 min |
 | Deep Learning Hands on Session | 60 min |
 | Lunch break |  |
-| Build static personal website using SSG+Netlify | 15 min |
 | Data Preprocessing & Wrangling | 45 min |
-| Break | 15 min |
 | Big Data Cloud Platform Lecture | 45 min |
+| Break | 15 min |
 | Big Data Cloud Platform Hands on | 60 min |
+| Build static personal website using SSG+Netlify | 15 min |
 | Soft Skill and Project Cycle | 20 min |
