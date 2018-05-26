@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Data Science"
+title: "Introduction"
 author: '[Hui Lin](http://scientistcafe.com) </br> </br> ![](http://scientistcafe.com/images/netlifylogo.png){width=15%}'
 date: "`r Sys.Date()`"
 output:
