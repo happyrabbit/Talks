@@ -1,6 +1,6 @@
 ### -----------------------------
 ### workshop setup
-### Hui Lin
+### Hui Lin @Netlify
 ### http://scientistcafe.com
 ### -----------------------------
 

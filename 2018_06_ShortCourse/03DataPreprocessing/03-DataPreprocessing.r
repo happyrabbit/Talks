@@ -102,18 +102,6 @@ zs<-(sdat$income-mean(na.omit(sdat$income)))/ymad
 # count the number of outliers
 sum(na.omit(zs>3.5))
 
-## Spatial Sign Transformation
-
-# KNN imputation
-sdat<-sim.dat[,c("income","age")]
-imp<-preProcess(sdat,method=c("knnImpute"),k=5)
-sdat<-predict(imp,sdat)
-transformed <- spatialSign(sdat)
-transformed <- as.data.frame(transformed)
-par(mfrow=c(1,2),oma=c(2,2,2,2))
-plot(income ~ age,data = sdat,col="blue",main="Before")
-plot(income ~ age,data = transformed,col="blue",main="After")
-
 ## Collinearity
 ## -----------------------------
 
