@@ -11,23 +11,12 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Issue driven
-
-> - If you don't know where to go ...
-
-> - <img src="images/watch.gif" alt="HTML5 Icon" style="width:300px;height:200px;">
-
-> - If you know where to go ...
-
-> - <img src="images/fun.gif" alt="HTML5 Icon" style="width:300px;height:200px;">
-
-
 ## Outline
 
 - Summarize data
     - `apply()`, `lapply()` and `sapply()` in base R
     - `ddply()` in `plyr` package
-    - `dplyr` package
+    - **`dplyr` package**
 - Tidy and Reshape Data
     - `reshape2` package
     - `tidyr` package
@@ -249,7 +238,9 @@ anti_join(x,y,by="ID")
 
 
 -  "Tidy data" represent the information from a dataset as data frames where each row is an observation and each column contains the values of a variable
+
 - convert data between the "wide" and the "long" format
+
 - two commonly used packages for this kind of manipulations: `tidyr` and `reshape2`
 
 ## `reshape2` package
@@ -357,8 +348,4 @@ sepdat %>% tbl_df()
 sepdat %>% 
   unite("variable",Source,Type,sep="_")
 ```
-
-## Some links
-
-- SQL Learning: https://www.w3schools.com/sql/
 
