@@ -1,6 +1,6 @@
 # Preparing Statistician to be Successful Big Data Scientist
 
-Outline/Description: With recent big data revolution, enterprises ranging from FORTUNE 500 to startups across the US are hungry for data scientists to bring valuable business insight from all the data collected. Statisticians are great data scientist candidates, but there are relatively few data scientists with statistics education background. In this short course, we will walk through the needed data science knowledge and skills through hands-on exercises to prepare statisticians to be successful data scientists. Data access and manipulation (i.e., extract-transform-load) in production environments are typical gaps for statisticians and these topics will also be covered in this course. Data science is a combination of science and art with data as the foundation. We will also cover the art part to guide participants to learn typical data science project flow, general pitfalls in data science projects, and soft skills to communicate with business stakeholders effectively. The Databricks community edition cloud platform and R-Studio will be used to cover programming and platform (such as Spark, Hadoop, GPU, SQL, and R) and typical machine learning algorithms (including examples for supervised learning, unsupervised learning, and deep learning). The prerequisite knowledge is MS level education in statistics and entry level of R knowledge.
+Outline/Description: With recent big data revolution, enterprises ranging from FORTUNE 500 to startups across the US are hungry for data scientists to bring valuable business insight from all the data collected. Statisticians are great data scientist candidates, but there are relatively few data scientists with statistics education background. In this short course, we will walk through the needed data science knowledge and skills (such as deep learning and big data platform) through hands-on exercises to prepare statisticians to be successful data scientists. Data science is a combination of science and art with data as the foundation. We will also cover the art part to guide participants to learn typical data science project flow, general pitfalls in data science projects, and soft skills to communicate with business stakeholders effectively. The Databricks community edition cloud platform and R-Studio will be used to cover programming and platform (such as Spark, Hadoop, GPU, SQL, and R) and typical machine learning algorithms (including examples for unsupervised learning and deep learning). The prerequisite knowledge is MS level education in statistics and entry level of R knowledge.
 This is an enhanced version of a similar highly-rated and full-day training course (CE 11C) offered at JSM 2017 in Baltimore with updated material to reflect students suggestions and new trends in data science. 
 
 1. Introduction to data science. In this section, we will introduce the history and trends in data science. We will list typical requirements for successful data scientist and do an evaluation for participants to find the skill gaps and give recommendations to bridge the gaps. Participants will have a good understanding of what data scientists do and know their skill and knowledge gaps after taking this section.
@@ -43,3 +43,14 @@ Tentative Schedule
 | Big Data Cloud Platform Hands on | 45 min |
 | Soft Skill and Project Cycle | 20 min |
 | Build static personal website using SSG+Netlify | 20 min |
+
+Useful links:
+
+1. Databrick free community edition account open: https://accounts.cloud.databricks.com/registration.html#signup/community
+
+2. Notebook that contains all the steps in the deep learning section: https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/1430974153588517/1806228006848429/latest.html 
+
+3. Notebook that contains all the steps in the big data platform section:
+https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/3725396058299890/1806228006848429/latest.html 
+
+
