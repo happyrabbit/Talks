@@ -118,6 +118,7 @@ If layer $l$ is a convolution layer:
 
 # Pooling Layers
 
+![](images/pooling.png){width=90%}
 
 
 # Examples: LeNet - 5
@@ -187,7 +188,7 @@ cnn_history <- cnn_model %>%
 
 - Model prediction
 
-```{r}
+```r
 cnn_pred <- cnn_model %>%
   predict_classes(x_test)
 ```
