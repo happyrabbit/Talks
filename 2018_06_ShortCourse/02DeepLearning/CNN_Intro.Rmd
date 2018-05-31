@@ -147,8 +147,9 @@ If layer $l$ is a convolution layer:
 
 # Using Keras R Package To Build Convolutional Neural Network Model
 
+- Define model structure
+
 ```r
-# Define model structure
 cnn_model <- keras_model_sequential() %>%
   layer_conv_2d(filters = 32, kernel_size = c(3, 3), activation = "relu", input_shape = input_shape) %>%
   layer_max_pooling_2d(pool_size = c(2, 2)) %>%
@@ -158,4 +159,35 @@ cnn_model <- keras_model_sequential() %>%
   layer_dense(units = 128, activation = "relu") %>%
   layer_dropout(rate = 0.5) %>%
   layer_dense(units = num_classes, activation = "softmax")
+```
+
+# Using Keras R Package To Build Convolutional Neural Network Model
+
+- Compile model
+
+```r
+cnn_model %>% compile(
+  loss = loss_categorical_crossentropy,
+  optimizer = optimizer_adadelta(),
+  metrics = c('accuracy')
+)
+```
+
+- Train model
+
+```r
+cnn_history <- cnn_model %>%
+  fit(
+    x_train, y_train,
+    batch_size = batch_size,
+    epochs = epochs,
+    validation_split = 0.2
+  )
+```
+
+- Model prediction
+
+```{r}
+cnn_pred <- cnn_model %>%
+  predict_classes(x_test)
 ```
