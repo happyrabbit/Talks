@@ -55,5 +55,4 @@ https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93e
 
 4. Data preprocessing code: https://github.com/happyrabbit/Talks/blob/master/2018_06_ShortCourse/03DataPreprocessing/03-DataPreprocessing.r
 
-
-
+5. Data wrangling code: https://github.com/happyrabbit/Talks/blob/master/2018_06_ShortCourse/04DataWrangling/04-DataWrangling.r
