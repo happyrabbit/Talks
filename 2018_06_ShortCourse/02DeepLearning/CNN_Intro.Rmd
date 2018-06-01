@@ -56,7 +56,11 @@ knitr::opts_chunk$set(echo = FALSE)
 # Convolutions Schematic
 
 <center>
-<img src="images/Convolution_schematic.gif" alt="HTML5 Icon" style="width:600px;height:400px;">
+![](images/cnn_exp.png){width=60%}
+</center>
+
+<center>
+<img src="images/Convolution_schematic.gif" alt="HTML5 Icon" style="width:500px;height:350px;">
 </center>
 
 # Edge Detection
