@@ -32,7 +32,7 @@ Tentative Schedule
 | Introduction |  15 min |
 | Deep Learning Lecture | 15 min + 45 min + 45 min|
 | Break | 20 min |
-| Data Preprossing Using R Pipe Line | 10 min |
+| R Pipe `%>%` | 10 min |
 | Databricks account setup | 30 min |
 | Deep Learning Hands on Session | 60 min |
 | Lunch break |  |
