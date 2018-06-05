@@ -148,7 +148,11 @@ If layer $l$ is a convolution layer:
 
 - Pooling
 
-- Fully connected
+- Fully Connected
+
+# Notes on Dropout
+
+![](images/dropout.png){width=90%}
 
 # Using Keras R Package To Build Convolutional Neural Network Model
 
@@ -159,7 +163,7 @@ cnn_model <- keras_model_sequential() %>%
   activation = "relu", input_shape = input_shape) %>%
   layer_max_pooling_2d(pool_size = c(2, 2)) %>%
   layer_conv_2d(filters = 64, kernel_size = c(3, 3), activation = "relu") %>%
-  layer_dropout(rate - 0.25) %>%
+  layer_dropout(rate = 0.25) %>%
   layer_flatten() %>%
   layer_dense(units = 128, activation = "relu") %>%
   layer_dropout(rate = 0.5) %>%
