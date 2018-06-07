@@ -95,9 +95,9 @@ dplyr::select(sim.dat, -age)
 dplyr::summarise(sim.dat, avg_online = mean(online_trans)) 
 # apply function anyNA() to each column
 # you can also assign a function vector such as: c("anyNA","is.factor")
-dplyr::summarise_each(sim.dat, funs_(c("anyNA")))
+dplyr::summarise_all(sim.dat, funs_(c("anyNA")))
 
-sim.dat %>% group_by(segment) %>% summarise_each(funs_(c("anyNA")))
+sim.dat %>% group_by(segment) %>% summarise_all(funs_(c("anyNA")))
 
 # Create new variable
 
@@ -106,7 +106,7 @@ dplyr::mutate(sim.dat, total_exp = store_exp + online_exp)
 
 # min_rank=rank(ties.method = "min")
 # mutate_each() means apply function to each column
-dplyr::mutate_each(sim.dat, funs(min_rank)) 
+dplyr::mutate_all(sim.dat, funs(min_rank)) 
 
 # `transmute()`: delete the original columns and only keep the new ones
 dplyr::transmute(sim.dat, total_exp = store_exp + online_exp) 

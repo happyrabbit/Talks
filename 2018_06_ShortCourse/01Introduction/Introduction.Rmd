@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = FALSE)
 | Data Preprossing Using R Pipe Line | 10 min |
 | Databricks account setup | 30 min |
 | Deep Learning Hands on Session | 60 min |
-| Lunch break |  |
+| Lunch break | 30 min |
 | Data Preprocessing & Wrangling | 45 min |
 | Data Preprocessing & Wrangling Hands on| 30 min |
 | Big Data Cloud Platform Lecture | 45 min |
@@ -38,30 +38,18 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <img src="images/awesome-me.gif" alt="HTML5 Icon" style="width:600px;height:400px;">
 
-## 
+## What is data science?
 
-<img src="images/DataScienceTrend2004.PNG" alt="HTML5 Icon" style="width:900px;height:500px;">
+> “This coupling of scientific discovery and practice involves the collection, management, processing, analysis, visualization, and interpretation of vast amounts of heterogeneous data associated with a diverse array of scientific, translational, and interdisciplinary applications.”
 
+## What is a data scientist?
 
-## Driving Forces
+Here is a list of definitions for a “data scientist”:
 
-- John Tukey identified 4 forces driving data analysis (there was no “data science” then):
-
-1. The formal theories of math/stat 
-1. Acceleration developments in computers and display devices 
-1. The challenge, in many fields, of more and ever larger bodies of data 
-1. The emphasis on quantification in an ever wider variety of disciplines 
-
-## What questions can data science answer? 
-
-- Specific
-    1. How can we increase sales?
-    1. Does the January campaign on product X increase the amount of purchase from our 2017 retained customers? 
-
-- Data
-    1. Representative
-    1. Relevant
-    1. Quality
+- “A data scientist is a data analyst who lives in California”
+- “A data scientist is someone who is better at statistics than any software engineer and better - at software engineering than any statistician.”
+- “A data scientist is a statistician who lives in San Francisco.”
+- “Data Science is statistics on a Mac.”
 
 ## Types of Questions
 
