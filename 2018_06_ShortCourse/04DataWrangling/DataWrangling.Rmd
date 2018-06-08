@@ -350,3 +350,6 @@ sepdat %>%
   unite("variable",Source,Type,sep="_")
 ```
 
+## Hands-on
+
+- https://github.com/happyrabbit/Talks/tree/master/2018_06_ShortCourse 
