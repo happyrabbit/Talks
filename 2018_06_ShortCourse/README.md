@@ -53,6 +53,7 @@ Useful links:
 3. Notebook that contains all the steps in the big data platform section:
 https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/3725396058299890/1806228006848429/latest.html 
 
-4. Data preprocessing code: https://github.com/happyrabbit/Talks/blob/master/2018_06_ShortCourse/03DataPreprocessing/03-DataPreprocessing.r
+4. Data preprocessing code:
+https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/3241206203474646/1806228006848429/latest.html
 
-5. Data wrangling code: https://github.com/happyrabbit/Talks/blob/master/2018_06_ShortCourse/04DataWrangling/04-DataWrangling.r
+5. Data wrangling code: https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/3241206203474687/1806228006848429/latest.html 

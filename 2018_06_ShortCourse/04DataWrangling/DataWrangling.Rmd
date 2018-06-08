@@ -350,3 +350,6 @@ sepdat %>%
   unite("variable",Source,Type,sep="_")
 ```
 
+## Hands-on
+
+https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/3241206203474687/1806228006848429/latest.html 
