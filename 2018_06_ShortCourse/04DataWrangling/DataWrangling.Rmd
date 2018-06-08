@@ -352,4 +352,4 @@ sepdat %>%
 
 ## Hands-on
 
-https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2961012104553482/3241206203474687/1806228006848429/latest.html 
+- https://github.com/happyrabbit/Talks/tree/master/2018_06_ShortCourse 
