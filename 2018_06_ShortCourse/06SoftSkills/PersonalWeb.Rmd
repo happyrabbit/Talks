@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = FALSE)
     - Jekyll: http://jekyllthemes.org
     - Hugo: https://themes.gohugo.io
 3. `blogdown`: 
-    - https://bookdown.org/yihui/blogdown/
+    - A quick example: https://bookdown.org/yihui/blogdown/
         - Create a new folder `BlogdownExample` 
         - Create a R project and point the path to the folder
         - run `blogdown::new_site()`
