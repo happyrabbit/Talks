@@ -1,6 +1,6 @@
 ---
 title: "Convolutional Neural Network"
-author: '[Hui Lin](http://scientistcafe.com) </br> </br> ![](http://scientistcafe.com/images/netlifylogo.png){width=15%}'
+author: '[Hui Lin](http://scientistcafe.com) </br> </br> ![](images/netlifylogo.png){width=15%}'
 date: "`r Sys.Date()`"
 output: 
   slidy_presentation: 
@@ -11,7 +11,13 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Neural Network Basic
+# Types of Neural Network 
+
+<center>
+![](images/NN_EXP.png){width=80%}
+</center>
+
+# Neural Network Application
 
 | Input (x) | Output (y) | Application |
 | :---: |  :---:  |  :---: |
@@ -22,12 +28,6 @@ knitr::opts_chunk$set(echo = FALSE)
 | Audio | Text transcript | Speech recognition |
 | English | Chinese | Machine translation |
 | Voice | Voice | Human computer conversation |
-
-# Neural Network Example
-
-<center>
-![](images/NN_EXP.png){width=80%}
-</center>
 
 # Computer Vision
 
@@ -172,6 +172,8 @@ cnn_model <- keras_model_sequential() %>%
 
 # Using Keras R Package To Build Convolutional Neural Network Model
 
+- Compile and define loss function, optimizer and metrics to monitor during the training
+
 ```r
 # Compile model
 cnn_model %>% compile(
@@ -180,6 +182,10 @@ cnn_model %>% compile(
   metrics = c('accuracy')
 )
 ```
+
+# Using Keras R Package To Build Convolutional Neural Network Model
+
+- Fit the model using training dataset and define epochs, batch size and validation data
 
 ```r
 # Train model
@@ -190,8 +196,16 @@ cnn_history <- cnn_model %>%
     epochs = epochs,
     validation_split = 0.2
   )
+```
 
+- Predict new outcomes using the trained model
+
+```r
 # Model prediction
 cnn_pred <- cnn_model %>%
   predict_classes(x_test)
 ```
+
+# Size of the Model
+
+![](images/cnn_size.png){width=90%}
