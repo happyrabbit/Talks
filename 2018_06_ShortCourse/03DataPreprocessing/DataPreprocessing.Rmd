@@ -213,6 +213,3 @@ dumMod<-dummyVars(~gender+house+income,
 head(predict(dumMod,sim.dat))
 ```
 
-## Hands-on
-
-- https://github.com/happyrabbit/Talks/tree/master/2018_06_ShortCourse 

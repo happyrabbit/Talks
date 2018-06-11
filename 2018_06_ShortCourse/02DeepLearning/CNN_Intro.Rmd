@@ -154,7 +154,16 @@ If layer $l$ is a convolution layer:
 
 ![](images/dropout.png){width=90%}
 
-# Using Keras R Package To Build Convolutional Neural Network Model
+# Using Keras To Build CNN
+
+Typical `keras` workflow:
+
+1. Define your training data: input tensors and target tensors
+2. Define a network of layers (or models) that maps your inputs to your targets
+3. Configure the learning process by choosing a loss function, an optimizer, and some metrics to monitor
+4. Iterate on your training data by calling the `fit()` method of your model
+
+# Using Keras To Build CNN
 
 ```r
 # Define model structure
@@ -170,7 +179,7 @@ cnn_model <- keras_model_sequential() %>%
   layer_dense(units = num_classes, activation = "softmax")
 ```
 
-# Using Keras R Package To Build Convolutional Neural Network Model
+# Using Keras To Build CNN
 
 - Compile and define loss function, optimizer and metrics to monitor during the training
 
@@ -183,7 +192,7 @@ cnn_model %>% compile(
 )
 ```
 
-# Using Keras R Package To Build Convolutional Neural Network Model
+# Using Keras To Build CNN
 
 - Fit the model using training dataset and define epochs, batch size and validation data
 
@@ -209,3 +218,17 @@ cnn_pred <- cnn_model %>%
 # Size of the Model
 
 ![](images/cnn_size.png){width=90%}
+
+
+## Other Notes
+
+
+- Two options: Cloud and GPU (NVIDIA)
+
+- Hyperparameter: pre-trained model
+
+- AI application: Bayesian accuracy
+
+- AlexNet: https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
+
+- Hands-on: https://github.com/happyrabbit/Talks/tree/master/2018_06_ShortCourse 

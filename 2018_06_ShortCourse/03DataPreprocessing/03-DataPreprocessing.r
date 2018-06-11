@@ -118,7 +118,9 @@ par(oma=c(2,2,2,2))
 corrplot.mixed(correlation,order="hclust",tl.pos="lt",upper="ellipse")
 
 # The `findCorrelation()` function in package `caret` will apply the above algorithm.
+
 (highCorr<-findCorrelation(cor(sdat),cutoff=.75))
+
 # delete highly correlated columns
 sdat<-sdat[-highCorr]
 # check the new correlation matrix
