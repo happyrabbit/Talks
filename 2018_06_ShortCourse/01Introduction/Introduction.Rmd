@@ -17,20 +17,19 @@ knitr::opts_chunk$set(echo = FALSE)
 
 | Topic | Time |
 | :---: | :---: |
-| Introduction |  15 min |
-| Deep Learning Lecture | 15 min + 45 min + 45 min|
-| Break | 20 min |
-| Data Preprossing Using R Pipe Line | 10 min |
-| Databricks account setup | 30 min |
-| Deep Learning Hands on Session | 60 min |
-| Lunch break | 30 min |
-| Data Preprocessing & Wrangling | 45 min |
-| Data Preprocessing & Wrangling Hands on| 30 min |
-| Big Data Cloud Platform Lecture | 45 min |
-| Break | 20 min |
-| Big Data Cloud Platform Hands on | 60 min |
-| Soft Skill and Project Cycle | 20 min |
-| Build static personal website using SSG+Netlify | 20 min |
+| Introduction |  8:00 - 8:20 |
+| Deep Learning Lecture | 8:20 - 10:20 |
+| Break | 10:20 - 10:40 |
+| Databricks account setup | 10:40 - 11:00 |
+| Deep Learning Hands on Session | 11:00 - 12:00 |
+| Lunch break | 12:00 - 13:30 |
+| Data Preprocessing & Wrangling | 13:30 - 14:30 |
+| Big Data Cloud Platform Lecture | 14:30 - 15:10 |
+| Break | 15:10 - 15:30 |
+| Big Data Cloud Platform Hands on | 15:30 - 16:30 |
+| Build static personal website using SSG+Netlify | 16:30 - 16:45 |
+| Soft Skill and Project Cycle | 16:45 - 17:00 |
+
 
 
 
