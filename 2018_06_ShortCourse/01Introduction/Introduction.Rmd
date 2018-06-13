@@ -31,8 +31,6 @@ knitr::opts_chunk$set(echo = FALSE)
 | Soft Skill and Project Cycle | 16:45 - 17:00 |
 
 
-
-
 ## What is data science?
 
 <img src="images/awesome-me.gif" alt="HTML5 Icon" style="width:600px;height:400px;">
@@ -49,13 +47,6 @@ Here is a list of definitions for a “data scientist”:
 - “A data scientist is someone who is better at statistics than any software engineer and better - at software engineering than any statistician.”
 - “A data scientist is a statistician who lives in San Francisco.”
 - “Data Science is statistics on a Mac.”
-
-## Types of Questions
-
-<center>
-![](http://scientistcafe.com/book/Figure/DataScienceQuestion.png){height=55%}
-</center>
-
 
 ## Types of Learning
 
