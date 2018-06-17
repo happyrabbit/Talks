@@ -13,7 +13,8 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Schedule
+
+# Schedule
 
 | Topic | Time |
 | :---: | :---: |
@@ -30,16 +31,24 @@ knitr::opts_chunk$set(echo = FALSE)
 | Build static personal website using SSG+Netlify | 16:30 - 16:45 |
 | Soft Skill and Project Cycle | 16:45 - 17:00 |
 
+# Slides 
 
-## What is data science?
+<center>
+<font size = "10">
+https://github.com/happyrabbit/DataScienceWorkshop2018
+</font>
+</center>
+
+
+# What is data science?
 
 <img src="images/awesome-me.gif" alt="HTML5 Icon" style="width:600px;height:400px;">
 
-## What is data science?
+# What is data science?
 
 > “This coupling of scientific discovery and practice involves the collection, management, processing, analysis, visualization, and interpretation of vast amounts of heterogeneous data associated with a diverse array of scientific, translational, and interdisciplinary applications.”
 
-## What is a data scientist?
+# What is a data scientist?
 
 Here is a list of definitions for a “data scientist”:
 
@@ -48,7 +57,37 @@ Here is a list of definitions for a “data scientist”:
 - “A data scientist is a statistician who lives in San Francisco.”
 - “Data Science is statistics on a Mac.”
 
-## Types of Learning
+# Types of Questions
+
+- Comparison: 
+    - Are males more inclined to buy our products than females?
+    - Are there any differences in customer satisfaction in different business districts?
+    - Do soybean carrying a particular gene have higher oil content?
+
+- Description:
+    - Is the distribution of annual income normal?
+    - Are there outliers?
+    - What are the means of different customer segments?
+
+- Clustering:
+    - Which customers have similar product preference? 
+    - Which printer performs similar pattern to the broken ones?
+    - How many different themes are there in the corpus?
+
+# Types of Questions
+
+- Classification:
+    - Who is more likely to buy our product?
+    -  Is the borrower going to pay back?
+    -  Is it a spam?
+
+- Regression:
+    - What will be the temperature tomorrow?
+    - What is the projected net income for the next season?
+    - How much inventory should we have? 
+
+
+# Types of Learning
 
 - Supervised Learning
     - Input data labeled
@@ -60,7 +99,7 @@ Here is a list of definitions for a “data scientist”:
 
 - Transfer Learning 
 
-## Types of Algorithm (1)
+# Types of Algorithm (1)
 
 - Regression
     - Ordinary Least Squares
@@ -81,7 +120,7 @@ Here is a list of definitions for a “data scientist”:
     - Random Forest
     - Gradient Boosting Machines (GBM)
     
-## Types of Algorithm (2)
+# Types of Algorithm (2)
 
 - Bayesian
     - Naive Bayes
@@ -95,7 +134,7 @@ Here is a list of definitions for a “data scientist”:
     - Apriori algorithm
     - Eclat algorithm
     
-## Types of Algorithm (3)
+# Types of Algorithm (3)
 
 
 - Neural Network and Deep Learning
@@ -109,23 +148,21 @@ Here is a list of definitions for a “data scientist”:
     - Multidimensional Scaling (MDS)
 
 
-## Data Scientist Skill Set
+# Data Scientist Skill Set
 
 ![](http://scientistcafe.com/book/Figure/SkillEN.png){width=100%}
 
 
 
-## General Process 
+# General Process 
 
 ![](http://scientistcafe.com/book/Figure/GeneralProcessEN.png){width=100%}
 
-## Automatic Data Science Pipeline
+# Automatic Data Science Pipeline
 
 ![](http://scientistcafe.com/book/Figure/DataPipeline.png){width=100%}
 
-## Some links
-
-- [Types of Machine Learning Algorithm](http://scientistcafe.com/2017/07/08/MachineLearningAl.html)
+# Some links
 
 - Online books:
     - [The Elements of Statistical Learning](http://web.stanford.edu/~hastie/ElemStatLearn/)
@@ -137,3 +174,5 @@ Here is a list of definitions for a “data scientist”:
     - [R for Marketing Research and Analytics](http://r-marketing.r-forge.r-project.org)
  
 - [Awesome-Data-Science-Materials](https://github.com/happyrabbit/Awesome-Data-Science-Materials)
+
+- [Big Data with R](https://www.dropbox.com/sh/8t4k8lgk0su3gjb/AAD4GwWUhUj7bdkmw0j7FPWNa/bigdataclass2018?dl=0)
